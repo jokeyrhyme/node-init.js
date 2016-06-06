@@ -1,0 +1,23 @@
+{
+  "name": "@jokeyrhyme/node-init",
+  "version": "1.0.0",
+  "description": "quickly bring a new or existing Node.js project into compliance with my personal preferences",
+  "main": "index.js",
+  "bin": {
+    "node-init": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/node-init.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/node-init/issues"
+  },
+  "homepage": "https://github.com/jokeyrhyme/node-init#readme"
+}
