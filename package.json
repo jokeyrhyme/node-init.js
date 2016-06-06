@@ -25,7 +25,12 @@
     "figures": "1.7.0",
     "graceful-fs": "4.1.4",
     "meow": "3.7.0",
-    "pify": "2.3.0"
+    "pify": "2.3.0",
+    "through2": "2.0.1",
+    "vinyl-fs": "2.4.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "directories": {
+    "test": "test"
+  }
 }

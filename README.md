@@ -23,4 +23,6 @@ node-init
 
 - runs `git init` to start a git repository, if none is found
 
+- ensures there's a .gitignore file containing "node_modules"
+
 - runs `npm init -y` to start a package.json or to restore important missing fields to an existing package.json
