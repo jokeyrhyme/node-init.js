@@ -32,3 +32,5 @@ node-init
 - installs and configures [ESLint](http://eslint.org/), with [JavaScript Standard Style](https://github.com/feross/eslint-config-standard)
 
 - adds an `npm run eslint` script for ESLint
+
+- ensures all versions in "devDependencies" in package.json start with "^"
