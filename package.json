@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/jokeyrhyme/node-init#readme",
   "dependencies": {
-    "meow": "3.7.0"
+    "execa": "0.4.0",
+    "figures": "1.7.0",
+    "graceful-fs": "4.1.4",
+    "meow": "3.7.0",
+    "pify": "2.3.0"
   }
 }

@@ -17,3 +17,8 @@ mkdir my-project; cd my-project; node-init
 # without a project name, assume current working directory:
 node-init
 ```
+
+
+## What does this do?
+
+- runs `git init` to start a git repository, if none is found
