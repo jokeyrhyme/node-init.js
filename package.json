@@ -26,5 +26,6 @@
     "graceful-fs": "4.1.4",
     "meow": "3.7.0",
     "pify": "2.3.0"
-  }
+  },
+  "devDependencies": {}
 }

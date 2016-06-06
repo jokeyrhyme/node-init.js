@@ -22,3 +22,5 @@ node-init
 ## What does this do?
 
 - runs `git init` to start a git repository, if none is found
+
+- runs `npm init -y` to start a package.json or to restore important missing fields to an existing package.json
