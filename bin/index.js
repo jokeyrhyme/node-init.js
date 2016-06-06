@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-'use strict';
+'use strict'
 
 const meow = require('meow')
 
@@ -12,6 +12,6 @@ Usage:
 Examples
     $ node-init
     $ node-init my-project
-`, {});
+`, {})
 
-init(cli.input, cli.flags);
+init(cli.input, cli.flags)

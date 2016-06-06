@@ -28,3 +28,7 @@ node-init
 - runs `npm init -y` to start a package.json or to restore important missing fields to an existing package.json
 
 - ensures "engines" is set in package.json, defaults to major versions of current `npm` and `node`
+
+- installs and configures [ESLint](http://eslint.org/), with [JavaScript Standard Style](https://github.com/feross/eslint-config-standard)
+
+- adds an `npm run eslint` script for ESLint
