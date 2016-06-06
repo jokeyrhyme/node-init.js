@@ -1,7 +1,7 @@
 {
   "name": "@jokeyrhyme/node-init",
   "version": "1.0.0",
-  "description": "quickly bring a new or existing Node.js project into compliance with my personal preferences",
+  "description": "impose my will upon a new or existing Node.js project",
   "main": "index.js",
   "bin": {
     "node-init": "bin/index.js"
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jokeyrhyme/node-init/issues"
   },
-  "homepage": "https://github.com/jokeyrhyme/node-init#readme"
+  "homepage": "https://github.com/jokeyrhyme/node-init#readme",
+  "dependencies": {
+    "meow": "3.7.0"
+  }
 }
