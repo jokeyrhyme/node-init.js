@@ -26,3 +26,5 @@ node-init
 - ensures there's a .gitignore file containing "node_modules"
 
 - runs `npm init -y` to start a package.json or to restore important missing fields to an existing package.json
+
+- ensures "engines" is set in package.json, defaults to major versions of current `npm` and `node`
