@@ -34,3 +34,7 @@ node-init
 - adds an `npm run eslint` script for ESLint
 
 - ensures all versions in "devDependencies" in package.json start with "^"
+
+- adds an `npm run fixpack` script for [fixpack](https://www.npmjs.com/package/fixpack)
+
+- ensures [.editorconfig](http://editorconfig.org/) exists
