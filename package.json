@@ -1,25 +1,13 @@
 {
   "name": "@jokeyrhyme/node-init",
-  "version": "1.0.0",
   "description": "impose my will upon a new or existing Node.js project",
-  "main": "index.js",
+  "version": "1.0.0",
   "bin": {
     "node-init": "bin/index.js"
   },
-  "scripts": {
-    "eslint": "eslint --fix --cache ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/node-init.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/jokeyrhyme/node-init/issues"
   },
-  "homepage": "https://github.com/jokeyrhyme/node-init#readme",
   "dependencies": {
     "execa": "0.4.0",
     "figures": "1.7.0",
@@ -36,7 +24,8 @@
     "eslint": "^2.11.1",
     "eslint-config-standard": "^5.3.1",
     "eslint-plugin-promise": "^1.3.2",
-    "eslint-plugin-standard": "^1.3.2"
+    "eslint-plugin-standard": "^1.3.2",
+    "fixpack": "^2.3.1"
   },
   "directories": {
     "test": "test"
@@ -44,5 +33,17 @@
   "engines": {
     "node": ">=6",
     "npm": ">=3"
+  },
+  "homepage": "https://github.com/jokeyrhyme/node-init#readme",
+  "keywords": [],
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/node-init.git"
+  },
+  "scripts": {
+    "eslint": "eslint --fix --cache .",
+    "fixpack": "fixpack"
   }
 }
