@@ -46,5 +46,6 @@
   "scripts": {
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack"
-  }
+  },
+  "author": ""
 }
