@@ -54,5 +54,8 @@
     "posttest": "npm run eslint && npm run fixpack",
     "test": "npm run ava && npm run nyc"
   },
-  "author": ""
+  "author": "",
+  "publishConfig": {
+    "access": "public"
+  }
 }
