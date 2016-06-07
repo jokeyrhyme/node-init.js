@@ -13,9 +13,15 @@ const cli = meow(`
 Usage:
     $ node-init [project]
 
+Options:
+    --scope [scope]  set npm @scope prefix
+
 Examples
     $ node-init
     $ node-init my-project
-`, {})
+    $ node-init my-project --scope my-org
+`, {
+  string: [ 'scope' ]
+})
 
 init(cli.input, cli.flags)

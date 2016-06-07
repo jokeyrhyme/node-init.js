@@ -16,6 +16,9 @@ mkdir my-project; cd my-project; node-init
 
 # without a project name, assume current working directory:
 node-init
+
+# to find more details about usage
+node-init --help
 ```
 
 
@@ -38,3 +41,5 @@ node-init
 - adds an `npm run fixpack` script for [fixpack](https://www.npmjs.com/package/fixpack)
 
 - ensures [.editorconfig](http://editorconfig.org/) exists
+
+- ensures "name" in package.json includes desired scope (if any)
