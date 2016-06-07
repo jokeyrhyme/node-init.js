@@ -43,3 +43,7 @@ node-init --help
 - ensures [.editorconfig](http://editorconfig.org/) exists
 
 - ensures "name" in package.json includes desired scope (if any)
+
+- sets default `{ publishConfig: { access: 'public' } }` in package.json if there is a scope
+
+- adds an NPM version badge to README.md if none is found
