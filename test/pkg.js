@@ -4,7 +4,7 @@ const path = require('path')
 
 const test = require('ava')
 
-const { getScope, injectScope } = require('../lib/scope.js')
+const { getScope, injectScope } = require('../lib/pkg.js')
 
 function shortCwd (cwd) {
   return `.../${path.basename(cwd || '')}`
