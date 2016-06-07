@@ -1,4 +1,4 @@
-# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)]() [![Build Status](https://travis-ci.org/jokeyrhyme/node-init.svg?branch=master)](https://travis-ci.org/jokeyrhyme/node-init)
+# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)]() [![Travis CI Status](https://travis-ci.org/jokeyrhyme/node-init.svg?branch=master)](https://travis-ci.org/jokeyrhyme/node-init) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/github/jokeyrhyme/node-init?branch=master&svg=true)](https://ci.appveyor.com/project/jokeyrhyme/node-init)
 
 impose my will upon a new or existing Node.js project
 
@@ -48,6 +48,10 @@ node-init --help
 
 - adds an NPM version badge to README.md if none is found
 
-- adds a Travis CI badge to README.md if none is found (GitHub-only)
+- adds a [Travis CI](https://travis-ci.org/) badge to README.md if none is found (GitHub-only)
 
 - ensures .travis.yml has good defaults at least (GitHub-only)
+
+- adds an [AppVeyor](http://www.appveyor.com/) badge to README.md if none is found (GitHub-only or Bitbucket-only)
+
+- ensures appveyor.yml has good defaults at least (GitHub-only or Bitbucket-only)

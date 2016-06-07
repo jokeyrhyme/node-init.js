@@ -2,7 +2,9 @@
 
 const test = require('ava')
 
-const { getGitHubPath, getOriginUrl } = require('../lib/git.js')
+const {
+  getBitbucketPath, getGitHubPath, getOriginUrl
+} = require('../lib/git.js')
 
 test('getOriginUrl(cwd) in this project', (t) => getOriginUrl(__dirname)
   .then((remoteUrl) => {
@@ -10,6 +12,17 @@ test('getOriginUrl(cwd) in this project', (t) => getOriginUrl(__dirname)
     t.is(typeof remoteUrl, 'string')
     t.truthy(remoteUrl.includes('github.com'))
   }))
+
+const getBitbucketPathData = [
+  { args: [''], expected: '' },
+  { args: ['git@bitbucket.org:username/project.git'], expected: 'username/project' },
+  { args: ['https://username@bitbucket.org/username/project.git'], expected: 'username/project' }
+]
+
+getBitbucketPathData.forEach((d) => test(
+  `getBitbucketPath(${JSON.stringify(d.args)})`,
+  (t) => t.is(getBitbucketPath(...d.args), d.expected)
+))
 
 const getGitHubPathData = [
   { args: [''], expected: '' },
