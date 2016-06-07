@@ -1,4 +1,4 @@
-# jokeyrhyme / node-init
+# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)]()
 
 impose my will upon a new or existing Node.js project
 
