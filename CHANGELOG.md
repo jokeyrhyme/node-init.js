@@ -1,6 +1,28 @@
 # Change Log
 
 
+## 1.2.0 - 2016-06-08
+
+
+### Added
+
+- add basic jsconfig.json defaults for Visual Studio Code (#9)
+
+
+### Changed
+
+- use .eslintrc if found, but prefer .eslintrc.json otherwise (#12)
+
+
+### Fixed
+
+- "eslint:recommended" should be left-most in .eslintrc.json (#16)
+
+- don't add "standard" to .eslintrc.json if "semistandard" is already there (#17)
+
+
+
+
 ## 1.1.0 - 2016-06-07
 
 
