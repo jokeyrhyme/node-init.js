@@ -24,29 +24,39 @@ node-init --help
 
 ## What does this do?
 
+
+### Version Control
+
 - runs `git init` to start a git repository, if none is found
 
 - ensures there's a .gitignore file containing "node_modules"
 
+
+### NPM good-practices
+
 - runs `npm init -y` to start a package.json or to restore important missing fields to an existing package.json
 
+- ensures "name" in package.json includes desired scope (if any)
+
 - ensures "engines" is set in package.json, defaults to major versions of current `npm` and `node`
+
+- ensures all versions in "devDependencies" in package.json start with "^"
+
+- adds an NPM version badge to README.md if none is found
+
+- sets default `{ publishConfig: { access: 'public' } }` in package.json if there is a scope
+
+- adds an `npm run fixpack` script for [fixpack](https://www.npmjs.com/package/fixpack)
+
+
+### Code Quality
 
 - installs and configures [ESLint](http://eslint.org/), with [JavaScript Standard Style](https://github.com/feross/eslint-config-standard)
 
 - adds an `npm run eslint` script for ESLint
 
-- ensures all versions in "devDependencies" in package.json start with "^"
 
-- adds an `npm run fixpack` script for [fixpack](https://www.npmjs.com/package/fixpack)
-
-- ensures [.editorconfig](http://editorconfig.org/) exists
-
-- ensures "name" in package.json includes desired scope (if any)
-
-- sets default `{ publishConfig: { access: 'public' } }` in package.json if there is a scope
-
-- adds an NPM version badge to README.md if none is found
+### Continuous Integration
 
 - adds a [Travis CI](https://travis-ci.org/) badge to README.md if none is found (GitHub-only)
 
@@ -55,3 +65,10 @@ node-init --help
 - adds an [AppVeyor](http://www.appveyor.com/) badge to README.md if none is found (GitHub-only or Bitbucket-only)
 
 - ensures appveyor.yml has good defaults at least (GitHub-only or Bitbucket-only)
+
+
+### IDE / Code Editor settings
+
+- ensures [.editorconfig](http://editorconfig.org/) exists
+
+- ensures jsconfig.json for [Visual Studio Code](https://code.visualstudio.com/) exists
