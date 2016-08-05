@@ -69,6 +69,6 @@ node-init --help
 
 ### IDE / Code Editor settings
 
-- ensures [.editorconfig](http://editorconfig.org/) exists
+- copies [.editorconfig](http://editorconfig.org/) from [multi-lingual template config](https://github.com/jokeyrhyme/standard-editorconfig)
 
 - ensures jsconfig.json for [Visual Studio Code](https://code.visualstudio.com/) exists
