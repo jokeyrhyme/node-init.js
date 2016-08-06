@@ -32,6 +32,7 @@
     "eslint-plugin-promise": "^2.0.0",
     "eslint-plugin-standard": "^2.0.0",
     "fixpack": "^2.3.1",
+    "flow-bin": "^0.30.0",
     "greenkeeper-postpublish": "^1.0.0",
     "nyc": "^7.1.0"
   },
@@ -45,7 +46,7 @@
   "homepage": "https://github.com/jokeyrhyme/node-init#readme",
   "keywords": [],
   "license": "BSD-2-Clause",
-  "main": "index.js",
+  "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -57,10 +58,10 @@
     "ava": "nyc ava",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
+    "flow_check": "flow check || exit 0",
     "nyc": "nyc check-coverage --branches 90 --functions 90 --lines 90 --statements 90",
     "postpublish": "greenkeeper-postpublish",
-    "posttest": "npm run eslint && npm run fixpack",
+    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
     "test": "npm run ava && npm run nyc"
-  },
-  "author": ""
+  }
 }
