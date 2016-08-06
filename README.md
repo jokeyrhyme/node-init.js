@@ -55,6 +55,8 @@ node-init --help
 
 - adds an `npm run eslint` script for ESLint
 
+- installs and configures [FlowType](https://flowtype.org/) and `npm run flow_check`
+
 
 ### Continuous Integration
 

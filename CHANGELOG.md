@@ -1,6 +1,21 @@
 # Change Log
 
 
+## 1.3.0 - 2016-08-06
+
+
+### Added
+
+- add and internally use [FlowType](https://flowtype.org/) (#11)
+
+
+### Changed
+
+- use standards-based EditorConfig settings: https://github.com/jokeyrhyme/standard-editorconfig
+
+- bump deps and devDeps
+
+
 ## 1.2.0 - 2016-06-08
 
 
@@ -19,8 +34,6 @@
 - "eslint:recommended" should be left-most in .eslintrc.json (#16)
 
 - don't add "standard" to .eslintrc.json if "semistandard" is already there (#17)
-
-
 
 
 ## 1.1.0 - 2016-06-07
