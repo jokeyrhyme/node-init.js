@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* @flow */
 'use strict'
 
 const meow = require('meow')
