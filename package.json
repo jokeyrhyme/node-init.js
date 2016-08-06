@@ -9,6 +9,7 @@
     "url": "https://github.com/jokeyrhyme/node-init/issues"
   },
   "dependencies": {
+    "@jokeyrhyme/pify-fs": "^1.0.1",
     "execa": "0.4.0",
     "figures": "1.7.0",
     "graceful-fs": "*",
@@ -18,7 +19,6 @@
     "lodash.without": "^4.3.0",
     "meow": "3.7.0",
     "node-fetch": "1.6.0",
-    "pify": "2.3.0",
     "semver": "^5.3.0",
     "through2": "2.0.1",
     "update-notifier": "^1.0.2",
@@ -63,5 +63,6 @@
     "postpublish": "greenkeeper-postpublish",
     "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
     "test": "npm run ava && npm run nyc"
-  }
+  },
+  "author": ""
 }
