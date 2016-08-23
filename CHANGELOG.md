@@ -8,6 +8,8 @@
 
 - default FlowType configuration ignores ava cache files
 
+- bump devDeps
+
 
 ## 1.3.0 - 2016-08-06
 
