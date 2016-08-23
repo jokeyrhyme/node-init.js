@@ -12,7 +12,7 @@
     "@jokeyrhyme/pify-fs": "^1.0.1",
     "execa": "0.4.0",
     "figures": "1.7.0",
-    "graceful-fs": "*",
+    "graceful-fs": "4.1.6",
     "js-yaml": "3.6.1",
     "load-json-file": "2.0.0",
     "lodash.union": "^4.5.0",
