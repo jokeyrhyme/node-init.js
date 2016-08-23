@@ -1,6 +1,14 @@
 # Change Log
 
 
+## Unreleased
+
+
+### Changed
+
+- default FlowType configuration ignores ava cache files
+
+
 ## 1.3.0 - 2016-08-06
 
 
