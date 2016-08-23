@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Added
+
+- add ESLint settings / devDeps for React (if found)
+
+
 ### Changed
 
 - default FlowType configuration ignores ava cache files
