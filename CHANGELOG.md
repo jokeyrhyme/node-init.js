@@ -8,6 +8,8 @@
 
 - add `npm cache clean` to AppVeyor configuration
 
+- no longer cache node_modules in AppVeyor (problematic?)
+
 
 ## 1.4.0 - 2016-08-23
 

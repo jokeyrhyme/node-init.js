@@ -10,5 +10,3 @@ test_script:
   - npm --version
   - npm cache clean
   - npm test
-cache:
-  - node_modules
