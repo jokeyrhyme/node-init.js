@@ -1,6 +1,14 @@
 # Change Log
 
 
+## Unreleased
+
+
+### Fixed
+
+- add `npm cache clean` to AppVeyor configuration
+
+
 ## 1.4.0 - 2016-08-23
 
 
