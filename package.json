@@ -18,7 +18,7 @@
     "lodash.union": "^4.5.0",
     "lodash.without": "^4.3.0",
     "meow": "3.7.0",
-    "node-fetch": "1.6.1",
+    "node-fetch": "1.6.2",
     "semver": "^5.3.0",
     "through2": "2.0.1",
     "update-notifier": "^1.0.2",
