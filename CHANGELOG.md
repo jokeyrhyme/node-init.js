@@ -9,6 +9,11 @@
 -   add [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
 
 
+### Changed
+
+-   copy useful bits from [`yarn`'s FlowType settings](https://github.com/yarnpkg/yarn/blob/v0.16.0/.flowconfig)
+
+
 ### Fixed
 
 -   add `npm cache clean` to AppVeyor configuration
