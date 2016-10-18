@@ -2,6 +2,7 @@
   "name": "@jokeyrhyme/node-init",
   "description": "impose my will upon a new or existing Node.js project",
   "version": "1.4.0",
+  "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
   "bin": {
     "node-init": "bin/index.js"
   },
@@ -13,6 +14,7 @@
     "execa": "0.5.0",
     "figures": "2.0.0",
     "graceful-fs": "4.1.9",
+    "idempotent-fs": "1.1.0",
     "js-yaml": "3.6.1",
     "load-json-file": "2.0.0",
     "lodash.union": "^4.5.0",
@@ -28,9 +30,10 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "eslint": "^3.8.1",
-    "eslint-config-standard": "^6.1.0",
-    "eslint-plugin-promise": "^3.0.0",
-    "eslint-plugin-standard": "^2.0.0",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-node": "^2.1.3",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.33.0",
     "greenkeeper-postpublish": "^1.0.0",
@@ -63,6 +66,5 @@
     "postpublish": "greenkeeper-postpublish",
     "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
     "test": "npm run ava && npm run nyc"
-  },
-  "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)"
+  }
 }
