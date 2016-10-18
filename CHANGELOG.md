@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.5.0 - 2016-10-19
+
+
 ### Added
 
 -   add [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
