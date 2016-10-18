@@ -11,7 +11,7 @@
   "dependencies": {
     "@jokeyrhyme/pify-fs": "^1.0.1",
     "execa": "0.5.0",
-    "figures": "1.7.0",
+    "figures": "2.0.0",
     "graceful-fs": "4.1.9",
     "js-yaml": "3.6.1",
     "load-json-file": "2.0.0",
@@ -27,14 +27,14 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
-    "eslint": "^3.5.0",
+    "eslint": "^3.8.1",
     "eslint-config-standard": "^6.1.0",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^2.0.0",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.33.0",
     "greenkeeper-postpublish": "^1.0.0",
-    "nyc": "^8.1.0"
+    "nyc": "^8.3.1"
   },
   "directories": {
     "test": "test"
@@ -63,5 +63,6 @@
     "postpublish": "greenkeeper-postpublish",
     "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
     "test": "npm run ava && npm run nyc"
-  }
+  },
+  "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)"
 }
