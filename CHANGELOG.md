@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.6.0 - 2016-10-26
+
+
 ### Added
 
 -   add `npm run ava` if using [ava](https://github.com/avajs/ava)
