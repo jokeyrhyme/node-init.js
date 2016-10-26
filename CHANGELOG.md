@@ -17,6 +17,10 @@
 
 ### Fixed
 
+-   no `npm cache clean` instructions for AppVeyor
+
+-   install 64-bit Node.js in AppVeyor
+
 -   flowtype: no more `|| exit 0` in npm script (#42, #43)
 
 
