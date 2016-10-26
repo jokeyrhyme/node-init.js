@@ -61,8 +61,8 @@
     "ava": "nyc ava",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "flow_check": "flow check || exit 0",
-    "nyc": "nyc check-coverage --branches 90 --functions 90 --lines 90 --statements 90",
+    "flow_check": "flow check",
+    "nyc": "nyc check-coverage",
     "postpublish": "greenkeeper-postpublish",
     "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
     "test": "npm run ava && npm run nyc"

@@ -1,5 +1,4 @@
-# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)](https://www.npmjs.com/package/@jokeyrhyme/node-init) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/0aypflvt21tpjfiu?svg=true)](https://ci.appveyor.com/project/jokeyrhyme/node-init-js)
-[![Travis CI Status](https://travis-ci.org/jokeyrhyme/node-init.js.svg?branch=master)](https://travis-ci.org/jokeyrhyme/node-init.js)
+# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)](https://www.npmjs.com/package/@jokeyrhyme/node-init) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/0aypflvt21tpjfiu?svg=true)](https://ci.appveyor.com/project/jokeyrhyme/node-init-js) [![Travis CI Status](https://travis-ci.org/jokeyrhyme/node-init.js.svg?branch=master)](https://travis-ci.org/jokeyrhyme/node-init.js)
 
 impose my will upon a new or existing Node.js project
 
@@ -57,6 +56,14 @@ node-init --help
 -   adds an `npm run eslint` script for ESLint
 
 -   installs and configures [FlowType](https://flowtype.org/) and `npm run flow_check`
+
+-   add `npm run ava` if using [ava](https://github.com/avajs/ava)
+
+-   add `npm run jest` if using [jest](https://github.com/facebook/jest)
+
+-   add `npm run mocha` if using [mocha](https://github.com/mochajs/mocha)
+
+-   add `npm run nyc` if using [nyc](https://github.com/istanbuljs/nyc)
 
 
 ### Continuous Integration

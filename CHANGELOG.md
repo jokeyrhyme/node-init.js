@@ -4,6 +4,17 @@
 ## Unreleased
 
 
+### Added
+
+-   add `npm run ava` if using [ava](https://github.com/avajs/ava)
+
+-   add `npm run jest` if using [jest](https://github.com/facebook/jest)
+
+-   add `npm run mocha` if using [mocha](https://github.com/mochajs/mocha)
+
+-   add `npm run nyc` if using [nyc](https://github.com/istanbuljs/nyc)
+
+
 ### Fixed
 
 -   flowtype: no more `|| exit 0` in npm script (#42, #43)
