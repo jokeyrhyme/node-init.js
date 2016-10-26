@@ -21,6 +21,8 @@
 
 -   install 64-bit Node.js in AppVeyor
 
+-   improve detection AppVeyor badge in README.md to avoid duplicates
+
 -   flowtype: no more `|| exit 0` in npm script (#42, #43)
 
 
