@@ -3,12 +3,15 @@
 'use strict'
 
 const meow = require('meow')
+const { enginesNotify } = require('package-engines-notifier')
+const { updateNodejsNotifier } = require('update-nodejs-notifier')
 const updateNotifier = require('update-notifier')
 
 const pkg = require('../package.json')
-const init = require('../lib/index.js').init
 
 updateNotifier({ pkg }).notify()
+
+updateNodejsNotifier()
 
 const cli = meow(`
 Usage:
@@ -25,4 +28,11 @@ Examples
   string: [ 'scope' ]
 })
 
-init(cli.input, cli.flags)
+if (!enginesNotify({ pkg: pkg })) {
+  // no engine trouble, proceed :)
+  const { init } = require('../lib/index.js')
+
+  init(cli.input, cli.flags)
+} else {
+  process.exitCode = 1
+}

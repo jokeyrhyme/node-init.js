@@ -14,6 +14,12 @@
 
 -   add `npm run nyc` if using [nyc](https://github.com/istanbuljs/nyc)
 
+-   stop execution if user's Node.js version doesn't match our package.json "engines"
+
+-   tell users (via [package-engines-notifier](https://github.com/jokeyrhyme/package-engines-notifier.js)) if their Node.js doesn't match our package.json "engines"
+
+-   tell users (via [update-nodejs-notifier](https://github.com/jokeyrhyme/update-nodejs-notifier.js)) if the major version of their Node.js is older than the current stable
+
 
 ### Fixed
 
