@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Fixed
+
+-   flowtype: no more `|| exit 0` in npm script (#42, #43)
+
+
 ## 1.5.0 - 2016-10-19
 
 
