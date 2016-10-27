@@ -4,6 +4,13 @@
 ## Unreleased
 
 
+### Added
+
+-   Travis CI and AppVeyor (try to) update `npm` itself (#20)
+
+-   Travis CI and AppVeyor `npm install --global` [yarn](https://github.com/yarnpkg/yarn), [flow-typed](https://github.com/flowtype/flow-typed), and [typings](https://github.com/typings/typings) (#48)
+
+
 ## 1.6.0 - 2016-10-26
 
 
