@@ -2,7 +2,7 @@
 
 const test = require('ava')
 
-const { ensureArrayHead } = require('../lib/data.js')
+const { ensureArrayHead, ensureArrayTail } = require('../lib/data.js')
 
 const ensureArrayHeadData = [
   { args: [ ['a', 'b'], 'c' ], expected: [ 'c', 'a', 'b' ] },
@@ -12,4 +12,14 @@ const ensureArrayHeadData = [
 ensureArrayHeadData.forEach((d) => test(
   `ensureArrayHead(${JSON.stringify(d.args)})`,
   (t) => t.deepEqual(ensureArrayHead(...d.args), d.expected))
+)
+
+const ensureArrayTailData = [
+  { args: [ ['a', 'b'], 'c' ], expected: [ 'a', 'b', 'c' ] },
+  { args: [ ['a', 'b'], 'a' ], expected: [ 'b', 'a' ] }
+]
+
+ensureArrayTailData.forEach((d) => test(
+  `ensureArrayTail(${JSON.stringify(d.args)})`,
+  (t) => t.deepEqual(ensureArrayTail(...d.args), d.expected))
 )
