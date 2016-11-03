@@ -10,6 +10,8 @@
 
 -   Travis CI and AppVeyor `npm install --global` [yarn](https://github.com/yarnpkg/yarn), [flow-typed](https://github.com/flowtype/flow-typed), and [typings](https://github.com/typings/typings) (#48)
 
+-   Travis CI tests with recommended Node.js versions (#50)
+
 
 ### Fixed
 
