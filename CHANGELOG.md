@@ -11,6 +11,11 @@
 -   Travis CI and AppVeyor `npm install --global` [yarn](https://github.com/yarnpkg/yarn), [flow-typed](https://github.com/flowtype/flow-typed), and [typings](https://github.com/typings/typings) (#48)
 
 
+### Fixed
+
+-   use AppVeyor badge from [shields.io](https://shields.io) (more reliable) (#34)
+
+
 ## 1.6.0 - 2016-10-26
 
 
