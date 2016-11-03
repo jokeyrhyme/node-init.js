@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.7.0 - 2016-11-03
+
+
 ### Added
 
 -   Travis CI and AppVeyor (try to) update `npm` itself (#20)
