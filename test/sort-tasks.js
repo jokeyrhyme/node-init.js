@@ -59,3 +59,15 @@ test('"provides: FOO" and "requires: FOO" and "settles: FOO"', (t) => {
   const ids = tasks.map((task) => task.id)
   t.deepEqual(ids, [ 'c', 'b', 'a' ])
 })
+
+test('A, A->B, B->C, BC->end', (t) => {
+  const tasks = [
+    { fn: noop, id: 'a', label: 'a', requires: [ 'B', 'C' ] },
+    { fn: noop, id: 'b', label: 'b', provides: [ 'C' ], requires: [ 'B' ] },
+    { fn: noop, id: 'c', label: 'c', provides: [ 'B' ], requires: [ 'A' ] },
+    { fn: noop, id: 'd', label: 'd', provides: [ 'A' ] }
+  ]
+  t.notThrows(() => tasks.sort(compareByMetadata))
+  const ids = tasks.map((task) => task.id)
+  t.deepEqual(ids, [ 'd', 'c', 'b', 'a' ])
+})

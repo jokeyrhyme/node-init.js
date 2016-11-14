@@ -4,6 +4,12 @@
 ## Unreleased
 
 
+### Changed
+
+-   load tasks in sequence based on metadata, instead of hardcoded order
+
+
+
 ## 1.7.0 - 2016-11-03
 
 

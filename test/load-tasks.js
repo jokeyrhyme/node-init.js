@@ -10,19 +10,25 @@ const { loadTasks } = require('../lib/tasks.js')
 
 const TASKS_DIR = path.join(__dirname, '..', 'lib', 'tasks')
 
+let tasks, taskIds
+test.before(() => {
+  return loadTasks()
+    .then((t) => {
+      tasks = t
+      taskIds = tasks.map((task) => task.id)
+    })
+})
+
 test('loadTasks()', (t) => {
   return fs.readdir(TASKS_DIR)
     .then((files) => {
       t.true(Array.isArray(files))
 
-      const tasks = loadTasks()
       t.is(files.length, tasks.length)
     })
 })
 
 test('all tasks have unique "id" and "label"', (t) => {
-  const tasks = loadTasks()
-
   const labels = tasks.map((task) => task.label)
   const uniqueLabels = Array.from(new Set(labels))
   t.is(tasks.length, uniqueLabels.length)
@@ -33,8 +39,6 @@ test('all tasks have unique "id" and "label"', (t) => {
 })
 
 test('all tasks "fn" function', (t) => {
-  const tasks = loadTasks()
-
   tasks.forEach((task) => {
     t.is(typeof task.fn, 'function', task.id)
   })
@@ -46,8 +50,6 @@ function assertTaskBefore (
   after /* : string[] */
 ) {
   const ids = [ before, ...after ]
-  const tasks = loadTasks()
-  const taskIds = tasks.map((task) => task.id)
 
   const theseTasks = tasks.filter((task) => ids.includes(task.id))
   const indices = theseTasks.map((task) => tasks.indexOf(task))
@@ -95,8 +97,6 @@ function assertTaskAfter (
   after /* : string */
 ) {
   const ids = [ ...before, after ]
-  const tasks = loadTasks()
-  const taskIds = tasks.map((task) => task.id)
 
   const theseTasks = tasks.filter((task) => ids.includes(task.id))
   const indices = theseTasks.map((task) => tasks.indexOf(task))
