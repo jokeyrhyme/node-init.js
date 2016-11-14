@@ -65,7 +65,6 @@ test('git-init.js before tasks that use `git` or .git/', (t) => {
     'appveyor.yml.js',
     'badge-appveyor.js',
     'badge-travis.js',
-    'gitignore.js',
     'npm-init.js',
     'travis.yml'
   ])
