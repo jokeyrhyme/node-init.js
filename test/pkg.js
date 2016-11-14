@@ -44,14 +44,7 @@ injectScopeData.forEach((d) => test(
   (t) => t.is(injectScope(...d.args), d.expected)
 ))
 
-/* :: import type { PackageJSON } from '../lib/pkg.js' */
-
-/* ::
-type ReactProjectData = {
-  expected: boolean,
-  pkg: PackageJSON
-}
-*/
+/* :: import type { PackageJSON, ReactProjectData } from '../lib/types.js' */
 
 const isReactProjectData /* : Array<ReactProjectData> */ = [
   { pkg: { name: 'a', version: '1' }, expected: false },
