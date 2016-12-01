@@ -1,13 +1,12 @@
-/* @flow */
 'use strict'
 
 const test = require('ava')
 
 const { fetchVersions, supportedMajors } = require('../lib/nodejs-versions.js')
 
-test('fetchVersions()', (t) => {
-  return fetchVersions()
-    .then((versions) => t.true(Array.isArray(versions)))
+test('fetchVersions()', async (t) => {
+  const versions = await fetchVersions()
+  t.true(Array.isArray(versions))
 })
 
 const versions20161019 = [

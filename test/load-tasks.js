@@ -1,4 +1,3 @@
-/* @flow */
 'use strict'
 
 const path = require('path')
@@ -11,21 +10,15 @@ const { loadTasks } = require('../lib/tasks.js')
 const TASKS_DIR = path.join(__dirname, '..', 'lib', 'tasks')
 
 let tasks, taskIds
-test.before(() => {
-  return loadTasks()
-    .then((t) => {
-      tasks = t
-      taskIds = tasks.map((task) => task.id)
-    })
+test.before(async () => {
+  tasks = await loadTasks()
+  taskIds = tasks.map((task) => task.id)
 })
 
-test('loadTasks()', (t) => {
-  return fs.readdir(TASKS_DIR)
-    .then((files) => {
-      t.true(Array.isArray(files))
-
-      t.is(files.length, tasks.length)
-    })
+test('loadTasks()', async (t) => {
+  const files = await fs.readdir(TASKS_DIR)
+  t.true(Array.isArray(files))
+  t.is(files.length, tasks.length)
 })
 
 test('all tasks have unique "id" and "label"', (t) => {

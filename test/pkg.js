@@ -1,4 +1,3 @@
-/* @flow */
 'use strict'
 
 const path = require('path')
@@ -16,9 +15,9 @@ function fixturePath (name) {
 }
 
 const getScopeData = [
-  { cwd: '', scope: '', expected: '' },
-  { cwd: '', scope: 'org', expected: 'org' },
-  { cwd: '', scope: '@org', expected: 'org' },
+  { cwd: __dirname, scope: '', expected: '' },
+  { cwd: __dirname, scope: 'org', expected: 'org' },
+  { cwd: __dirname, scope: '@org', expected: 'org' },
   { cwd: fixturePath('named'), scope: 'org', expected: 'org' },
   { cwd: fixturePath('named'), scope: '', expected: '' },
   { cwd: fixturePath('scoped'), scope: '', expected: 'myscope' },
