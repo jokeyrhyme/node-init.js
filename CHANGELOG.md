@@ -13,6 +13,8 @@
 
 -   remove 'node_modules' from Travis CI cache to avoid odd issues
 
+-   `node-init` no longer unexpectedly breaks ESLint plugin configuration
+
 
 ## 1.7.0 - 2016-11-03
 
