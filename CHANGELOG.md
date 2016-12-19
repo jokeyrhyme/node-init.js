@@ -8,6 +8,8 @@
 
 -   load tasks in sequence based on metadata, instead of hardcoded order
 
+-   use [locate-path](https://github.com/sindresorhus/locate-path) package (#68)
+
 
 ### Fixed
 
