@@ -9,6 +9,10 @@
 -   load tasks in sequence based on metadata, instead of hardcoded order
 
 
+### Fixed
+
+-   remove 'node_modules' from Travis CI cache to avoid odd issues
+
 
 ## 1.7.0 - 2016-11-03
 
