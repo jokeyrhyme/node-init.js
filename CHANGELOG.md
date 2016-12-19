@@ -15,6 +15,8 @@
 
 -   `node-init` no longer unexpectedly breaks ESLint plugin configuration
 
+-   fresh projects no longer cause `TypeError`s to throw (#61)
+
 
 ## 1.7.0 - 2016-11-03
 
