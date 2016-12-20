@@ -7,7 +7,7 @@
     "node-init": "bin/index.js"
   },
   "bugs": {
-    "url": "https://github.com/jokeyrhyme/node-init/issues"
+    "url": "https://github.com/jokeyrhyme/node-init.js/issues"
   },
   "dependencies": {
     "@jokeyrhyme/pify-fs": "^1.0.1",
@@ -54,7 +54,7 @@
     "node": ">=6",
     "npm": ">=3"
   },
-  "homepage": "https://github.com/jokeyrhyme/node-init#readme",
+  "homepage": "https://github.com/jokeyrhyme/node-init.js#readme",
   "keywords": [],
   "license": "BSD-2-Clause",
   "main": "lib/index.js",
@@ -63,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/node-init.git"
+    "url": "git+https://github.com/jokeyrhyme/node-init.js.git"
   },
   "scripts": {
     "ava": "nyc ava",
