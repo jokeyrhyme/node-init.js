@@ -1,7 +1,7 @@
 {
   "name": "@jokeyrhyme/node-init",
   "description": "impose my will upon a new or existing Node.js project",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
   "bin": {
     "node-init": "bin/index.js"

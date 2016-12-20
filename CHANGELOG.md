@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+### 1.8.0 - 2016-12-20
+
+
 ### Changed
 
 -   load tasks in sequence based on metadata, instead of hardcoded order
