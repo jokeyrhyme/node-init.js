@@ -22,7 +22,7 @@
     "lodash.union": "^4.5.0",
     "lodash.without": "^4.3.0",
     "meow": "3.7.0",
-    "node-fetch": "1.6.3",
+    "node-fetch": "2.0.0-alpha.1",
     "p-memoize": "1.0.0",
     "package-engines-notifier": "1.1.0",
     "read-pkg-up": "2.0.0",
