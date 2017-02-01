@@ -11,7 +11,12 @@
     -   [version these in your project instead](https://github.com/flowtype/flow-typed#why-do-i-need-to-commit-the-libdefs-that-flow-typed-installs-for-my-project)
 
 
-### 1.8.0 - 2016-12-20
+### Fixed
+
+-   maintain consistent 2-space indents when editing JSON files
+
+
+## 1.8.0 - 2016-12-20
 
 
 ### Changed
