@@ -4,7 +4,19 @@
 ## Unreleased
 
 
-### 1.8.0 - 2016-12-20
+### Changed
+
+-   AppVeyor/Travis no longer configured to install type files
+
+    -   [version these in your project instead](https://github.com/flowtype/flow-typed#why-do-i-need-to-commit-the-libdefs-that-flow-typed-installs-for-my-project)
+
+
+### Fixed
+
+-   maintain consistent 2-space indents when editing JSON files
+
+
+## 1.8.0 - 2016-12-20
 
 
 ### Changed
