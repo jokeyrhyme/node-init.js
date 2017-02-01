@@ -10,6 +10,8 @@
 
     -   [version these in your project instead](https://github.com/flowtype/flow-typed#why-do-i-need-to-commit-the-libdefs-that-flow-typed-installs-for-my-project)
 
+-   AppVeyor installs and uses the latest NPM (#81)
+
 
 ### Fixed
 
