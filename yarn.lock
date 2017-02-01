@@ -997,10 +997,6 @@ buffer-shims@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
 
-buffer-to-arraybuffer@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/buffer-to-arraybuffer/-/buffer-to-arraybuffer-0.0.4.tgz#f3e5e3f6f2632c71e7cdebe76ed1718fad421d4c"
-
 builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -2844,16 +2840,7 @@ node-emoji@1.3.1:
   dependencies:
     string.prototype.codepointat "^0.2.0"
 
-node-fetch@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.0.0-alpha.1.tgz#28499a933f19adcf3ecf8b9fa39a6c79202d1072"
-  dependencies:
-    babel-runtime "^6.11.6"
-    buffer-to-arraybuffer "0.0.4"
-    encoding "^0.1.11"
-    is-stream "^1.0.1"
-
-node-fetch@^1.6.3:
+node-fetch@1.6.3, node-fetch@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.6.3.tgz#dc234edd6489982d58e8f0db4f695029abcd8c04"
   dependencies:
@@ -4099,9 +4086,9 @@ update-json-file@^1.1.1:
     load-json-file "^2.0.0"
     write-json-file "^2.0.0"
 
-update-nodejs-notifier@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/update-nodejs-notifier/-/update-nodejs-notifier-1.1.0.tgz#808c0b723cdb0d94e33603d0d51258bfc3ba6811"
+update-nodejs-notifier@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/update-nodejs-notifier/-/update-nodejs-notifier-1.1.1.tgz#7a7753f14c99e9b8f2b1bf29a87fede719abfced"
   dependencies:
     boxen-notify "^1.0.0"
     chalk "^1.1.3"
