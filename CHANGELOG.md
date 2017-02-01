@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.8.1 - 2017-02-02
+
+
 ### Changed
 
 -   AppVeyor/Travis no longer configured to install type files
@@ -11,6 +14,12 @@
     -   [version these in your project instead](https://github.com/flowtype/flow-typed#why-do-i-need-to-commit-the-libdefs-that-flow-typed-installs-for-my-project)
 
 -   AppVeyor installs and uses the latest NPM (#81)
+
+-   update [execa](https://www.npmjs.com/package/execa) to 0.6.0 (from 0.5.0)
+
+-   update [update-nodejs-notifier](https://www.npmjs.com/package/update-nodejs-notifier) to [1.1.1](https://github.com/jokeyrhyme/update-nodejs-notifier.js/releases/tag/1.1.1) (from [1.1.0](https://github.com/jokeyrhyme/update-nodejs-notifier.js/releases/tag/1.1.0))
+
+-   depend upon [update-json-file](https://www.npmjs.com/package/update-json-file) [1.1.1](https://github.com/jokeyrhyme/update-json-file.js/releases/tag/1.1.1)
 
 
 ### Fixed
