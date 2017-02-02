@@ -9,6 +9,13 @@
 -   GitLab CI integration for non-BitBucket non-GitHub projects (#75)
 
 
+### Fixed
+
+-   prevent `npm init -y` from populating "dependencies" (#96)
+
+-   fix regression for fresh .eslintrc.json and jsconfig.json files
+
+
 ## 1.8.1 - 2017-02-02
 
 
