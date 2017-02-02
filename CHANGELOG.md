@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.9.0 - 2017-02-02
+
+
 ### Added
 
 -   GitLab CI integration for non-BitBucket non-GitHub projects (#75)
