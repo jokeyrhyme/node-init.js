@@ -15,7 +15,7 @@
     "figures": "2.0.0",
     "graceful-fs": "4.1.11",
     "idempotent-fs": "1.2.0",
-    "js-yaml": "3.8.1",
+    "js-yaml": "3.8.2",
     "load-json-file": "2.0.0",
     "locate-path": "^2.0.0",
     "lodash.intersection": "4.4.0",
