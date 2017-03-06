@@ -37,14 +37,13 @@
   "devDependencies": {
     "ava": "^0.18.1",
     "eslint": "^3.8.1",
-    "eslint-config-standard": "^6.2.0",
+    "eslint-config-standard": "^7.0.0",
     "eslint-plugin-ava": "^4.0.0",
     "eslint-plugin-node": "^4.0.0",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.41.0",
-    "greenkeeper-postpublish": "^1.0.0",
     "nyc": "^10.0.0"
   },
   "directories": {
@@ -71,7 +70,6 @@
     "fixpack": "fixpack",
     "flow_check": "flow check",
     "nyc": "nyc check-coverage --lines 40",
-    "postpublish": "greenkeeper-postpublish",
     "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
     "test": "npm run ava && npm run nyc"
   }
