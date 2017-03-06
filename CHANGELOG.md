@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Fixed
+
+-   drop old [greenkeeper-postpublish](https://github.com/greenkeeperio/greenkeeper-postpublish) integration
+
+
 ## 1.9.0 - 2017-02-02
 
 
