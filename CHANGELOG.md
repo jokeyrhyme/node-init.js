@@ -8,6 +8,8 @@
 
 -   drop old [greenkeeper-postpublish](https://github.com/greenkeeperio/greenkeeper-postpublish) integration
 
+-   drop explicit extends in test/.eslintrc.json
+
 
 ## 1.9.0 - 2017-02-02
 
