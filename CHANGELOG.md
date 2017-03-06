@@ -4,6 +4,20 @@
 ## Unreleased
 
 
+## 1.9.1 - 2017-03-06
+
+
+### Changed
+
+-   update [js-yaml](https://www.npmjs.com/package/js-yaml) to [3.8.2](https://g
+ithub.com/nodeca/js-yaml/blob/master/CHANGELOG.md) (from [3.7.0](https://github.
+com/nodeca/js-yaml/blob/master/CHANGELOG.md))
+
+-   update [update-notifier](https://www.npmjs.com/package/update-notifier) to 2
+.1.0 (from [1.0.3](https://github.com/yeoman/update-notifier/releases/tag/v1.0.3
+))
+
+
 ### Fixed
 
 -   drop old [greenkeeper-postpublish](https://github.com/greenkeeperio/greenkeeper-postpublish) integration
