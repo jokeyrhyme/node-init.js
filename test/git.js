@@ -3,7 +3,7 @@
 const test = require('ava')
 
 const {
-  getBitbucketPath, getGitHubPath, getOriginUrl
+  getBitbucketPath, getGitHubPath, getOriginUrl, isGitProject
 } = require('../lib/git.js')
 
 test('getOriginUrl(cwd) in this project', (t) => getOriginUrl(__dirname)
@@ -37,3 +37,13 @@ getGitHubPathData.forEach((d) => test(
   `getGitHubPath(${JSON.stringify(d.args)})`,
   (t) => t.is(getGitHubPath(...d.args), d.expected)
 ))
+
+test('isGitProject(__dirname) is true', async (t) => {
+  const result = await isGitProject(__dirname)
+  t.is(result, true)
+})
+
+test('isGitProject("/") is false', async (t) => {
+  const result = await isGitProject('/')
+  t.is(result, false)
+})
