@@ -18,13 +18,18 @@ Usage:
     $ node-init [project]
 
 Options:
-    --scope [scope]  set npm @scope prefix
+    --scope [scope]        set npm @scope prefix
+    --check-git-status     stop work if un-versioned changes
+    --no-check-git-status  do work even if un-versioned changes
 
 Examples
     $ node-init
     $ node-init my-project
     $ node-init my-project --scope my-org
 `, {
+  default: {
+    checkGitStatus: true
+  },
   string: [ 'scope' ]
 })
 

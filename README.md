@@ -22,6 +22,15 @@ node-init --help
 ```
 
 
+### Options
+
+```
+--scope [scope]        set npm @scope prefix
+--check-git-status     stop work if un-versioned changes
+--no-check-git-status  do work even if un-versioned changes
+```
+
+
 ## What does this do?
 
 
