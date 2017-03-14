@@ -4,6 +4,13 @@
 ## Unreleased
 
 
+### Added
+
+-   new safety check for un-versioned changes (via `git status`)
+
+-   new `--no-check-git-status` flag to ignore safety check
+
+
 ## 1.9.1 - 2017-03-06
 
 
