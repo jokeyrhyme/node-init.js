@@ -13,6 +13,11 @@
 -   ensure package "main" points to file (created for you, if not)
 
 
+### Fixed
+
+-   support .eslintrc.json file in `test/`, `tests/`, or `__tests__/` instead of always assuming `test/`
+
+
 ## 1.9.1 - 2017-03-06
 
 
