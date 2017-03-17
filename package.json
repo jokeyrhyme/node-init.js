@@ -43,7 +43,7 @@
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1",
     "fixpack": "^2.3.1",
-    "flow-bin": "^0.41.0",
+    "flow-bin": "^0.42.0",
     "nyc": "^10.0.0",
     "pify": "^2.3.0",
     "rimraf": "^2.6.1"
