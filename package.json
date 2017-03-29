@@ -72,7 +72,8 @@
     "fixpack": "fixpack",
     "flow_check": "flow check",
     "nyc": "nyc check-coverage --lines 45",
-    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
-    "test": "npm run ava && npm run nyc"
+    "posttest": "npm run eslint && npm run flow_check",
+    "test": "npm run ava && npm run nyc",
+    "pretest": "npm run fixpack"
   }
 }
