@@ -13,6 +13,16 @@
 -   ensure package "main" points to file (created for you, if not)
 
 
+### Changed
+
+-   `npm run fixpack` is now part of the "pretest" hook rather than "posttest"
+
+
+### Fixed
+
+-   support .eslintrc.json file in `test/`, `tests/`, or `__tests__/` instead of always assuming `test/`
+
+
 ## 1.9.1 - 2017-03-06
 
 
