@@ -10,6 +10,8 @@
 
 -   new `--no-check-git-status` flag to ignore safety check
 
+-   ensure package "main" points to file (created for you, if not)
+
 
 ## 1.9.1 - 2017-03-06
 

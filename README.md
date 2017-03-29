@@ -57,6 +57,8 @@ node-init --help
 
 -   adds an `npm run fixpack` script for [fixpack](https://www.npmjs.com/package/fixpack)
 
+-   package "main" refers to a file that exists (created for you, if not)
+
 
 ### Code Quality
 
