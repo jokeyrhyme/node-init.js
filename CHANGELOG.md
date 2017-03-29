@@ -1,19 +1,10 @@
-<a name="1.10.0"></a>
-## 1.10.0 (2017-03-29)
-
-
-#### Bug Fixes
-
-* **package:**
-  * update execa to version 0.6.3 ([2f03f09d](git+https://github.com/jokeyrhyme/node-init.js.git/commit/2f03f09d))
-  * update execa to version 0.6.2 ([8c484b5b](git+https://github.com/jokeyrhyme/node-init.js.git/commit/8c484b5b))
-  * update execa to version 0.6.1 ([99681601](git+https://github.com/jokeyrhyme/node-init.js.git/commit/99681601))
-
-
 # Change Log
 
 
 ## Unreleased
+
+
+## 1.10.0 - 2017-03-29
 
 
 ### Added
@@ -28,6 +19,8 @@
 ### Changed
 
 -   `npm run fixpack` is now part of the "pretest" hook rather than "posttest"
+
+-   update [execa](https://www.npmjs.com/package/execa) to 0.6.3 (from 0.6.0)
 
 
 ### Fixed
