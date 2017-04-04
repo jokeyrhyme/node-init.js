@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@jokeyrhyme/pify-fs": "^1.0.1",
+    "chalk": "1.1.3",
     "execa": "0.6.3",
     "figures": "2.0.0",
     "graceful-fs": "4.1.11",
@@ -21,6 +22,7 @@
     "lodash.intersection": "4.4.0",
     "lodash.union": "^4.5.0",
     "lodash.without": "^4.3.0",
+    "log-update": "1.0.2",
     "meow": "3.7.0",
     "node-fetch": "1.6.3",
     "p-memoize": "1.0.0",
@@ -73,7 +75,7 @@
     "flow_check": "flow check",
     "nyc": "nyc check-coverage --lines 45",
     "posttest": "npm run eslint && npm run flow_check",
-    "test": "npm run ava && npm run nyc",
-    "pretest": "npm run fixpack"
+    "pretest": "npm run fixpack",
+    "test": "npm run ava && npm run nyc"
   }
 }

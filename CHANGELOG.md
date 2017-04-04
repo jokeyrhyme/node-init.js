@@ -4,6 +4,13 @@
 ## Unreleased
 
 
+### Added
+
+-   display individual task status during operation
+
+-   groundwork for skipping unnecessary tasks
+
+
 ## 1.10.0 - 2017-03-29
 
 
