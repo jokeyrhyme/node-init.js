@@ -15,6 +15,8 @@
 
 -   don't add an NPM badge for private packages
 
+-   install Flow only if "@flow" comment is found (#118)
+
 
 ## 1.10.0 - 2017-03-29
 
