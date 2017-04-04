@@ -10,8 +10,11 @@ const test = require('ava')
 
 const {
   getBitbucketPath, getGitHubPath, getOriginUrl,
-  init, isGitClean, isGitProject
+  init, isGitClean, isGitProject,
+  isPublicGitHub, isPublicGitHubOrBitbucket
 } = require('../lib/git.js')
+
+const PROJECT_PATH = path.join(__dirname, '..')
 
 test.beforeEach(async (t) => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'node-init-'))
@@ -73,5 +76,15 @@ test('init(tempDir) then isGitProject(tempDir) is true', async (t) => {
 test('init(tempDir) then isGitClean(tempDir) is true', async (t) => {
   await init(t.context.tempDir)
   const result = await isGitClean(t.context.tempDir)
+  t.is(result, true)
+})
+
+test('isPublicGitHub(PROJECT_PATH) is true', async (t) => {
+  const result = await isPublicGitHub(PROJECT_PATH)
+  t.is(result, true)
+})
+
+test('isPublicGitHubOrBitbucket(PROJECT_PATH) is true', async (t) => {
+  const result = await isPublicGitHubOrBitbucket(PROJECT_PATH)
   t.is(result, true)
 })
