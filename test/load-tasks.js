@@ -121,3 +121,9 @@ test('fixpack.js after tasks that use package.json (except npm-dev-deps.js)', (t
     'travis.yml.js'
   ], 'fixpack.js')
 })
+
+test('flowtype.js after tasks that edit project code', (t) => {
+  assertTaskAfter(t, [
+    'pkg-main.js'
+  ], 'flowtype.js')
+})

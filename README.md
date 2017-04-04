@@ -51,7 +51,7 @@ node-init --help
 
 -   ensures all versions in "devDependencies" in package.json start with "^"
 
--   adds an NPM version badge to README.md if none is found
+-   adds an NPM version badge to README.md if none is found, and the package is not marked as "private"
 
 -   sets default `{ publishConfig: { access: 'public' } }` in package.json if there is a scope
 
@@ -67,6 +67,8 @@ node-init --help
 -   adds an `npm run eslint` script for ESLint
 
 -   installs and configures [FlowType](https://flowtype.org/) and `npm run flow_check`
+
+-   uninstalls FlowType when not used
 
 -   add `npm run ava` if using [ava](https://github.com/avajs/ava)
 
