@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.11.0 - 2017-04-04
+
+
 ### Added
 
 -   display individual task status during operation
