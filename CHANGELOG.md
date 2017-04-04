@@ -11,6 +11,11 @@
 -   groundwork for skipping unnecessary tasks
 
 
+### Changed
+
+-   don't add an NPM badge for private packages
+
+
 ## 1.10.0 - 2017-03-29
 
 
