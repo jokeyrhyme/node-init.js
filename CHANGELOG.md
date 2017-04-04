@@ -10,6 +10,8 @@
 
 -   groundwork for skipping unnecessary tasks
 
+-   uninstall Flow when unused (#118)
+
 
 ### Changed
 

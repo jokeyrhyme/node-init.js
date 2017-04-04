@@ -28,7 +28,9 @@
     "node-fetch": "1.6.3",
     "p-memoize": "1.0.0",
     "package-engines-notifier": "1.1.0",
+    "pify": "2.3.0",
     "read-pkg-up": "2.0.0",
+    "rimraf": "2.6.1",
     "semver": "^5.3.0",
     "through2": "2.0.3",
     "update-json-file": "^1.1.1",
@@ -47,9 +49,7 @@
     "eslint-plugin-standard": "^2.0.1",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.42.0",
-    "nyc": "^10.0.0",
-    "pify": "^2.3.0",
-    "rimraf": "^2.6.1"
+    "nyc": "^10.0.0"
   },
   "directories": {
     "test": "test"

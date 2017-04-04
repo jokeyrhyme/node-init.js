@@ -68,6 +68,8 @@ node-init --help
 
 -   installs and configures [FlowType](https://flowtype.org/) and `npm run flow_check`
 
+-   uninstalls FlowType when not used
+
 -   add `npm run ava` if using [ava](https://github.com/avajs/ava)
 
 -   add `npm run jest` if using [jest](https://github.com/facebook/jest)
