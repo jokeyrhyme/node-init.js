@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 1.11.1 - 2017-04-05
+
+
 ### Fixed
 
 -   install missing eslint-plugin-import
