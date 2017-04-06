@@ -30,7 +30,9 @@ test('getOriginUrl(cwd) in this project', (t) => getOriginUrl(__dirname)
       t.is(typeof remoteUrl, 'string')
       t.truthy(remoteUrl.includes('github.com'))
     }
-  }))
+  })
+  .then(() => t.pass())
+)
 
 const getBitbucketPathData = [
   { args: [''], expected: '' },
