@@ -42,15 +42,14 @@
   "devDependencies": {
     "ava": "^0.19.0",
     "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.0.0",
     "eslint-plugin-ava": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.0",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.44.0",
-    "nyc": "^10.0.0"
+    "nyc": "^10.0.0",
+    "prettier": "^1.2.2"
   },
   "directories": {
     "test": "test"
@@ -77,7 +76,8 @@
     "flow_check": "flow check",
     "nyc": "nyc check-coverage --lines 45",
     "posttest": "npm run eslint && npm run flow_check",
-    "pretest": "npm run fixpack",
-    "test": "npm run ava && npm run nyc"
+    "pretest": "npm run fixpack && npm run prettier",
+    "test": "npm run ava && npm run nyc",
+    "prettier": "prettier --single-quote --write \"{,!(build|coverage|dist|node_modules)/**/}*.js\""
   }
 }
