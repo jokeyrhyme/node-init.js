@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 2.0.0 - 2017-04-23
+
+
 ### Added
 
 -   use [prettier](https://github.com/prettier/prettier) for JavaScript code style
