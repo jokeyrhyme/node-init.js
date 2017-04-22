@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Added
+
+-   [recommended React rules for ESLint](https://github.com/yannickcr/eslint-plugin-react) for React projects
+
+
 ### Removed
 
 -   [JavaScript SemiStandard Style for ESLint](https://github.com/Flet/eslint-config-semistandard)
