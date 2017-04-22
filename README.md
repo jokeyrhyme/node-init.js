@@ -62,6 +62,8 @@ node-init --help
 
 ### Code Quality
 
+-   installs and configures [prettier](https://github.com/prettier/prettier) and `npm run prettier`
+
 -   installs and configures [ESLint](http://eslint.org/), with [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
 
 -   adds an `npm run eslint` script for ESLint

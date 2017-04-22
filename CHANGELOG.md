@@ -6,6 +6,8 @@
 
 ### Added
 
+-   use [prettier](https://github.com/prettier/prettier) for JavaScript code style
+
 -   [recommended React rules for ESLint](https://github.com/yannickcr/eslint-plugin-react) for React projects
 
 
