@@ -6,14 +6,13 @@ const test = require('ava')
 const { lib: { testEslintrcUpdater } } = require('../lib/tasks/eslintrc.json.js')
 
 test('fresh test/.eslintrc.json', (t) => {
-  const result = testEslintrcUpdater({}, { hasReact: false })
+  const result = testEslintrcUpdater({})
   t.is(result.extends, undefined)
 })
 
 test('old test/.eslintrc.json', (t) => {
   const result = testEslintrcUpdater(
-    { extends: [ '../.eslintrc.json' ] },
-    { hasReact: false }
+    { extends: [ '../.eslintrc.json' ] }
   )
   t.is(result.extends, undefined)
 })

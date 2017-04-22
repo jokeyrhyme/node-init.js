@@ -4,6 +4,19 @@
 ## Unreleased
 
 
+### Removed
+
+-   [JavaScript SemiStandard Style for ESLint](https://github.com/Flet/eslint-config-semistandard)
+
+-   [JavaScript Standard Style for ESLint](https://github.com/feross/eslint-config-standard)
+
+  -   [JavaScript Standard Style Plugin for ESLint](https://github.com/xjamundx/eslint-plugin-standard)
+
+-   [JavaScript Standard JSX Style for ESLint](https://github.com/feross/eslint-config-standard-jsx)
+
+-   [JavaScript Standard React Style for ESLint](https://github.com/feross/eslint-config-standard-react)
+
+
 ## 1.11.1 - 2017-04-05
 
 
