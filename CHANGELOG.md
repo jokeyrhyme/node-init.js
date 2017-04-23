@@ -15,6 +15,8 @@
 
 -   example entry-point "index.js" file no longer enables Flow by default
 
+-   move ESLint to "pretest" script, as it may change files (#117)
+
 
 ## 2.0.0 - 2017-04-23
 
