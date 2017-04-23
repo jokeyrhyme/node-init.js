@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Added
+
+-   install and configure [jest](https://github.com/facebook/jest) if other test frameworks are absent and `npm test` is not configured
+
+
 ### Changed
 
 -   example entry-point "index.js" file no longer enables Flow by default

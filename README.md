@@ -66,6 +66,8 @@ node-init --help
 
 -   installs and configures [ESLint](http://eslint.org/), with [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
 
+-   install and configure [jest](https://github.com/facebook/jest) if other test frameworks are absent and `npm test` is not configured
+
 -   adds an `npm run eslint` script for ESLint
 
 -   installs and configures [FlowType](https://flowtype.org/) and `npm run flow_check`
