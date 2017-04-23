@@ -8,6 +8,8 @@
 
 -   install and configure [jest](https://github.com/facebook/jest) if other test frameworks are absent and `npm test` is not configured
 
+-   populate a ".eslintignore" file to configure ESLint
+
 
 ### Changed
 
