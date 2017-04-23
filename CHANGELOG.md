@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Changed
+
+-   example entry-point "index.js" file no longer enables Flow by default
+
+
 ## 2.0.0 - 2017-04-23
 
 
