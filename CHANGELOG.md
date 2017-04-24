@@ -20,6 +20,11 @@
 -   dot-ignore files (e.g. .gitignore) use UNIX line-endings
 
 
+### Removed
+
+-   no longer configure test/.eslintrc.json by default
+
+
 ## 2.0.0 - 2017-04-23
 
 
