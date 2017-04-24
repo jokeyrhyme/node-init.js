@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 2.1.0 - 2017-04-25
+
+
 ### Added
 
 -   install and configure [jest](https://github.com/facebook/jest) if other test frameworks are absent and `npm test` is not configured
@@ -33,6 +36,13 @@
 -   use [prettier](https://github.com/prettier/prettier) for JavaScript code style
 
 -   [recommended React rules for ESLint](https://github.com/yannickcr/eslint-plugin-react) for React projects
+
+
+### Changed
+
+-   update [js-yaml](https://www.npmjs.com/package/js-yaml) to [3.8.3](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md) (from [3.8.2](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md))
+
+-   update [log-update](https://www.npmjs.com/package/log-update) to 2.0.0 (from 1.0.2)
 
 
 ### Removed
