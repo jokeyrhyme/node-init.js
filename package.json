@@ -75,9 +75,9 @@
     "fixpack": "fixpack",
     "flow_check": "flow check",
     "nyc": "nyc check-coverage --lines 45",
-    "posttest": "npm run eslint && npm run flow_check",
-    "pretest": "npm run fixpack && npm run prettier",
-    "test": "npm run ava && npm run nyc",
-    "prettier": "prettier --single-quote --write \"{,!(build|coverage|dist|node_modules)/**/}*.js\""
+    "posttest": "npm run flow_check",
+    "pretest": "npm run fixpack && npm run prettier && npm run eslint",
+    "prettier": "prettier --single-quote --write \"{,!(build|coverage|dist|node_modules)/**/}*.js\"",
+    "test": "npm run ava && npm run nyc"
   }
 }

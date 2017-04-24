@@ -4,6 +4,22 @@
 ## Unreleased
 
 
+### Added
+
+-   install and configure [jest](https://github.com/facebook/jest) if other test frameworks are absent and `npm test` is not configured
+
+-   populate a ".eslintignore" file to configure ESLint
+
+
+### Changed
+
+-   example entry-point "index.js" file no longer enables Flow by default
+
+-   move ESLint to "pretest" script, as it may change files (#117)
+
+-   dot-ignore files (e.g. .gitignore) use UNIX line-endings
+
+
 ## 2.0.0 - 2017-04-23
 
 
