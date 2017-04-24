@@ -17,6 +17,8 @@
 
 -   move ESLint to "pretest" script, as it may change files (#117)
 
+-   dot-ignore files (e.g. .gitignore) use UNIX line-endings
+
 
 ## 2.0.0 - 2017-04-23
 

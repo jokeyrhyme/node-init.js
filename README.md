@@ -99,3 +99,8 @@ node-init --help
 -   copies [.editorconfig](http://editorconfig.org/) from [multi-lingual template config](https://github.com/jokeyrhyme/standard-editorconfig)
 
 -   ensures jsconfig.json for [Visual Studio Code](https://code.visualstudio.com/) exists
+
+
+### Other Opinionated Stuff
+
+-   for simplicity, text files should use UNIX line-endings
