@@ -25,7 +25,7 @@
     "lodash.without": "^4.3.0",
     "log-update": "2.0.0",
     "meow": "3.7.0",
-    "node-fetch": "1.6.3",
+    "node-fetch": "1.7.0",
     "p-memoize": "1.0.0",
     "package-engines-notifier": "1.1.0",
     "pify": "2.3.0",
