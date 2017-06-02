@@ -48,7 +48,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.47.0",
-    "nyc": "^10.0.0",
+    "nyc": "^11.0.1",
     "prettier": "^1.2.2"
   },
   "directories": {
