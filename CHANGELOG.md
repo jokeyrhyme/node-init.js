@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Changed
+
+-   update `npm run prettier` options
+
+
 ## 2.1.0 - 2017-04-25
 
 
