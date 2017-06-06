@@ -4,12 +4,22 @@
 ## Unreleased
 
 
+### Fixed
+
+-   ensure `prettier` can find target files (#146)
+
+
 ## 2.2.0 - 2017-06-04
 
 
 ### Changed
 
--   update `npm run prettier` options
+-   update `npm run prettier` options (#146)
+
+
+### Notes
+
+-   not published to NPM due to issue (#146)
 
 
 ## 2.1.0 - 2017-04-25
