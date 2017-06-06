@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 2.2.1 - 2017-06-06
+
+
 ### Fixed
 
 -   ensure `prettier` can find target files (#146)
