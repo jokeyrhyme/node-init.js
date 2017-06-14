@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 2.2.2 - 2017-06-15
+
+
 ### Fixed
 
 -   create new JSON files from scratch (#152)
