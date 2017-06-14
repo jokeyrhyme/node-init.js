@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Fixed
+
+-   create new JSON files from scratch (#152)
+
+
 ## 2.2.1 - 2017-06-06
 
 
