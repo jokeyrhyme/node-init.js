@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Changed
+
+-   install `yarn` in CI environments only when needed (#148)
+
+
 ### Fixed
 
 -   ignore the exit code from `prettier --list-different ...` (#154)
