@@ -78,7 +78,7 @@
     "nyc": "nyc check-coverage --lines 45",
     "posttest": "npm run flow_check",
     "pretest": "npm run fixpack && npm run prettier && npm run eslint",
-    "prettier": "prettier --list-different --single-quote --write \"{,!(build|coverage|dist|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\"",
+    "prettier": "prettier --list-different --single-quote --write \"{,!(build|coverage|dist|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0",
     "test": "npm run ava && npm run nyc"
   }
 }

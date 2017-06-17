@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Fixed
+
+-   ignore the exit code from `prettier --list-different ...` (#154)
+
+
 ## 2.2.2 - 2017-06-15
 
 
