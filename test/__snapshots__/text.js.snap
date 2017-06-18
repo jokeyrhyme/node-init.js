@@ -1,5 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`withBadge 1`] = `" [badge](https://github.com)"`;
+
+exports[`withBadge 2`] = `"# name [badge](https://github.com)"`;
+
 exports[`withLine() 1`] = `
 "
 checkexisting
