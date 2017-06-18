@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Fixed
+
+-   `prettier` should skip "flow-typed" and "typings" folders (#157)
+
+
 ## 2.2.3 - 2017-06-18
 
 
