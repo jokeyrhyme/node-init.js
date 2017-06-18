@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 2.2.3 - 2017-06-18
+
+
 ### Changed
 
 -   install `yarn` in CI environments only when needed (#148)
