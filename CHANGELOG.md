@@ -11,6 +11,11 @@
 -   use [`nsp`](https://github.com/nodesecurity/nsp) to check for vulnerable dependencies
 
 
+### Fixed
+
+-   configure `flow` to skip test files within dependencies
+
+
 ## 2.2.4 - 2017-06-18
 
 
