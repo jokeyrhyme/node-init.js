@@ -50,8 +50,7 @@
     "fixpack": "^2.3.1",
     "flow-bin": "^0.51.0",
     "npx": "*",
-    "nyc": "^11.1.0",
-    "prettier": "^1.5.3"
+    "nyc": "^11.1.0"
   },
   "directories": {
     "lib": "lib",
@@ -81,7 +80,7 @@
     "nyc": "nyc check-coverage --lines 50",
     "posttest": "npm run flow_check",
     "pretest": "npm run fixpack && npm run prettier && npm run eslint",
-    "prettier": "prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0",
+    "prettier": "npx prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0",
     "test": "npm run ava && npm run nyc && npm run nsp"
   }
 }

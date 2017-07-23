@@ -11,6 +11,11 @@
 -   use [`nsp`](https://github.com/nodesecurity/nsp) to check for vulnerable dependencies
 
 
+### Changed
+
+-   run `prettier` via `npx`, no longer as a devDep
+
+
 ### Fixed
 
 -   configure `flow` to skip test files within dependencies
