@@ -24,7 +24,7 @@
     "lodash.intersection": "4.4.0",
     "lodash.union": "^4.5.0",
     "lodash.without": "^4.3.0",
-    "log-update": "2.0.0",
+    "log-update": "2.1.0",
     "meow": "3.7.0",
     "node-fetch": "^1.7.1",
     "p-memoize": "1.0.0",
