@@ -76,11 +76,11 @@
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
     "flow_check": "flow check",
-    "nsp": "npx nsp check",
+    "nsp": "npx -q nsp check",
     "nyc": "nyc check-coverage --lines 50",
     "posttest": "npm run flow_check",
     "pretest": "npm run fixpack && npm run prettier && npm run eslint",
-    "prettier": "npx prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0",
+    "prettier": "npx -q prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0",
     "test": "npm run ava && npm run nyc && npm run nsp"
   }
 }
