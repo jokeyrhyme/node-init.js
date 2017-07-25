@@ -4,6 +4,23 @@
 ## Unreleased
 
 
+### Added
+
+-   install a project-local copy of [`npx`](https://github.com/zkat/npx), which is very useful for executing other CLI tools
+
+-   use [`nsp`](https://github.com/nodesecurity/nsp) to check for vulnerable dependencies
+
+
+### Changed
+
+-   run `prettier` via `npx`, no longer as a devDep
+
+
+### Fixed
+
+-   configure `flow` to skip test files within dependencies
+
+
 ## 2.2.4 - 2017-06-18
 
 

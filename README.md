@@ -59,6 +59,8 @@ node-init --help
 
 -   package "main" refers to a file that exists (created for you, if not)
 
+-   use [`nsp`](https://github.com/nodesecurity/nsp) to check for vulnerable dependencies
+
 
 ### Code Quality
 
@@ -104,3 +106,6 @@ node-init --help
 ### Other Opinionated Stuff
 
 -   for simplicity, text files should use UNIX line-endings
+
+-   install a project-local copy of [`npx`](https://github.com/zkat/npx), which is very useful for executing other CLI tools
+
