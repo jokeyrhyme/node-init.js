@@ -102,7 +102,7 @@ test('npm-dev-deps.js after tasks that install devDeps', t => {
   );
 });
 
-test('fixpack.js after tasks that use package.json (except npm-dev-deps.js)', t => {
+test('sort-package-json.js after tasks that use package.json (except npm-dev-deps.js)', t => {
   assertTaskAfter(
     t,
     [
@@ -120,7 +120,7 @@ test('fixpack.js after tasks that use package.json (except npm-dev-deps.js)', t 
       'npm-test.js',
       'travis.yml.js'
     ],
-    'fixpack.js'
+    'sort-package-json.js'
   );
 });
 

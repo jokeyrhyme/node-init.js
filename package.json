@@ -1,13 +1,37 @@
 {
   "name": "@jokeyrhyme/node-init",
-  "description": "impose my will upon a new or existing Node.js project",
   "version": "2.2.4",
+  "description": "impose my will upon a new or existing Node.js project",
+  "keywords": [],
+  "homepage": "https://github.com/jokeyrhyme/node-init.js#readme",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/node-init.js/issues"
+  },
+  "license": "BSD-2-Clause",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
+  "main": "lib/index.js",
   "bin": {
     "node-init": "bin/index.js"
   },
-  "bugs": {
-    "url": "https://github.com/jokeyrhyme/node-init.js/issues"
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/node-init.js.git"
+  },
+  "scripts": {
+    "ava": "nyc ava",
+    "eslint": "eslint --fix --cache .",
+    "flow_check": "flow check",
+    "nsp": "npx -q nsp check",
+    "nyc": "nyc check-coverage --lines 50",
+    "sort-package-json": "npx -q sort-package-json",
+    "pretest": "npm run prettier && npm run eslint && npm run sort-package-json",
+    "test": "npm run ava && npm run nyc && npm run nsp",
+    "posttest": "npm run flow_check",
+    "prettier": "npx -q prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
   },
   "dependencies": {
     "@jokeyrhyme/pify-fs": "^1.0.1",
@@ -47,40 +71,15 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
-    "fixpack": "^2.3.1",
     "flow-bin": "^0.51.0",
     "npx": "*",
     "nyc": "^11.1.0"
-  },
-  "directories": {
-    "lib": "lib",
-    "test": "test"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=3"
   },
-  "homepage": "https://github.com/jokeyrhyme/node-init.js#readme",
-  "keywords": [],
-  "license": "BSD-2-Clause",
-  "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/node-init.js.git"
-  },
-  "scripts": {
-    "ava": "nyc ava",
-    "eslint": "eslint --fix --cache .",
-    "fixpack": "fixpack",
-    "flow_check": "flow check",
-    "nsp": "npx -q nsp check",
-    "nyc": "nyc check-coverage --lines 50",
-    "posttest": "npm run flow_check",
-    "pretest": "npm run fixpack && npm run prettier && npm run eslint",
-    "prettier": "npx -q prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0",
-    "test": "npm run ava && npm run nyc && npm run nsp"
   }
 }
