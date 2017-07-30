@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+## 2.3.0 - 2017-07-30
+
+
 ### Added
 
 -   install a project-local copy of [`npx`](https://github.com/zkat/npx), which is very useful for executing other CLI tools
@@ -18,6 +21,16 @@
 -   run `prettier` via `npx`, no longer as a devDep
 
 -   use [`sort-package-json`](https://github.com/keithamus/sort-package-json) via `npx`, instead of `fixpack`
+
+-   update [chalk](https://www.npmjs.com/package/chalk) to 2.0.1 (from 1.1.3)
+
+-   update [js-yaml](https://www.npmjs.com/package/js-yaml) to [3.9.1](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md) (from [3.8.4](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md))
+
+-   update [log-update](https://www.npmjs.com/package/log-update) to 2.1.0 (from 2.0.0)
+
+-   update [semver](https://www.npmjs.com/package/semver) to 5.4.1 (from 5.3.0)
+
+-   depend upon [latest-version](https://www.npmjs.com/package/latest-version) 3.1.0
 
 
 ### Fixed
@@ -395,3 +408,5 @@
 -   npm-engines: use faster `process.version`, not `node --version`
 
 -   skip `npm install --save-dev` steps if already in devDependencies
+
+
