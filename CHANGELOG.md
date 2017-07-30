@@ -13,6 +13,8 @@
 
 ### Changed
 
+-   run `flow-bin` via `npx`, no longer as a devDep
+
 -   run `prettier` via `npx`, no longer as a devDep
 
 -   use [`sort-package-json`](https://github.com/keithamus/sort-package-json) via `npx`, instead of `fixpack`
