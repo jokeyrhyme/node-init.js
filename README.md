@@ -55,7 +55,7 @@ node-init --help
 
 -   sets default `{ publishConfig: { access: 'public' } }` in package.json if there is a scope
 
--   adds an `npm run fixpack` script for [fixpack](https://www.npmjs.com/package/fixpack)
+-   use [`sort-package-json`](https://github.com/keithamus/sort-package-json) to keep package.json tidy
 
 -   package "main" refers to a file that exists (created for you, if not)
 
