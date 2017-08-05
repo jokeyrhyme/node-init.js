@@ -36,7 +36,7 @@
     "@jokeyrhyme/pify-fs": "^1.0.1",
     "chalk": "2.0.1",
     "detect-flowtype": "1.0.0",
-    "execa": "0.7.0",
+    "execa": "0.8.0",
     "figures": "2.0.0",
     "graceful-fs": "4.1.11",
     "has-yarn": "1.0.0",
