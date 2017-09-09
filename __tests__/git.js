@@ -1,9 +1,10 @@
 'use strict';
 
+const { mkdtemp } = require('fs');
 const os = require('os');
 const path = require('path');
+const { promisify } = require('util');
 
-const fs = require('@jokeyrhyme/pify-fs');
 const pify = require('pify');
 const rimraf = require('rimraf');
 
@@ -19,7 +20,7 @@ const {
 let tempDir;
 
 beforeEach(async () => {
-  tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'node-init-'));
+  tempDir = await promisify(mkdtemp)(path.join(os.tmpdir(), 'node-init-'));
 });
 
 afterEach(async () => {

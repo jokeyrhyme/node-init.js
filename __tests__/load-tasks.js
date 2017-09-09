@@ -1,8 +1,9 @@
 'use strict';
 
+const { readdir } = require('fs');
 const path = require('path');
+const { promisify } = require('util');
 
-const fs = require('../lib/fs.js');
 const { loadTasks } = require('../lib/tasks.js');
 
 const TASKS_DIR = path.join(__dirname, '..', 'lib', 'tasks');
@@ -14,7 +15,7 @@ beforeAll(async () => {
 });
 
 test('loadTasks()', async () => {
-  const files = await fs.readdir(TASKS_DIR);
+  const files = await promisify(readdir)(TASKS_DIR);
   expect(Array.isArray(files)).toBe(true);
   expect(files.length).toBe(tasks.length);
 });

@@ -14,8 +14,7 @@
     "node-init": "bin/index.js"
   },
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
@@ -32,7 +31,6 @@
     "prettier": "npx -q prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
   },
   "dependencies": {
-    "@jokeyrhyme/pify-fs": "^1.0.1",
     "chalk": "2.1.0",
     "detect-flowtype": "1.0.0",
     "execa": "0.8.0",
@@ -73,7 +71,7 @@
     "npx": "^9.5.0"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=8",
     "npm": ">=3"
   },
   "publishConfig": {

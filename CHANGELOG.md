@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Changed
+
+-   require Node.js 8.x, drop support for older versions
+
+
 ## 2.3.0 - 2017-07-30
 
 
