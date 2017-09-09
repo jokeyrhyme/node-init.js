@@ -14,26 +14,23 @@
     "node-init": "bin/index.js"
   },
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jokeyrhyme/node-init.js.git"
   },
   "scripts": {
-    "ava": "nyc ava",
     "eslint": "eslint --fix --cache .",
-    "flow": "npx -q flow-bin@^0.51.1 check",
+    "flow": "npx -q flow-bin@^0.54.1 check",
+    "jest": "jest",
     "nsp": "npx -q nsp check",
-    "nyc": "nyc check-coverage --lines 50",
     "sort-package-json": "npx -q sort-package-json",
     "pretest": "npm run prettier && npm run eslint && npm run sort-package-json",
-    "test": "npm run ava && npm run nyc && npm run nsp && npm run flow",
+    "test": "npm run jest && npm run nsp && npm run flow",
     "prettier": "npx -q prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
   },
   "dependencies": {
-    "@jokeyrhyme/pify-fs": "^1.0.1",
     "chalk": "2.1.0",
     "detect-flowtype": "1.0.0",
     "execa": "0.8.0",
@@ -65,20 +62,27 @@
     "write-json-file": "2.2.0"
   },
   "devDependencies": {
-    "ava": "^0.22.0",
     "eslint": "^4.0.0",
     "eslint-plugin-ava": "^4.2.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
-    "npx": "^9.5.0",
-    "nyc": "^11.1.0"
+    "jest": "^21.0.2",
+    "npx": "^9.5.0"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=8",
     "npm": ">=3"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "lines": 55
+      }
+    }
   }
 }

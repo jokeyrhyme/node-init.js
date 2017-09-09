@@ -1,12 +1,10 @@
 'use strict';
 
-const test = require('ava');
-
 const { fetchVersions, supportedMajors } = require('../lib/nodejs-versions.js');
 
-test('fetchVersions()', async t => {
+test('fetchVersions()', async () => {
   const versions = await fetchVersions();
-  t.true(Array.isArray(versions));
+  expect(Array.isArray(versions)).toBe(true);
 });
 
 const versions20161019 = [
@@ -29,7 +27,7 @@ const supportedMajorsData = [
 ];
 supportedMajorsData.forEach(({ range, versions, expected }) => {
   const latestVersion = versions[0].version;
-  test(`supportedMajors() ${range} ${latestVersion}`, t => {
-    t.deepEqual(supportedMajors(range, versions), expected);
+  test(`supportedMajors() ${range} ${latestVersion}`, () => {
+    expect(supportedMajors(range, versions)).toEqual(expected);
   });
 });

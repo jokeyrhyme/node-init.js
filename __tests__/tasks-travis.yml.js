@@ -1,47 +1,45 @@
 /* @flow */
 'use strict';
 
-const test = require('ava');
-
 const {
   isNeeded,
   lib: { pruneCache, pruneInstall, updateNpm }
 } = require('../lib/tasks/travis.yml.js');
 
-test('isNeeded()', async t => {
+test('isNeeded()', async () => {
   const result = await isNeeded({ cwd: process.cwd(), scope: '' });
-  t.is(typeof result, 'boolean');
+  expect(typeof result).toBe('boolean');
 });
 
-test('pruneCache({}, { hasYarn: false })', t => {
+test('pruneCache({}, { hasYarn: false })', () => {
   const results = pruneCache({});
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });
 
-test('pruneInstall({ ... }, { hasYarn: false })', t => {
+test('pruneInstall({ ... }, { hasYarn: false })', () => {
   const results = pruneInstall(
     {
       install: ['npm install --global yarn']
     },
     { hasYarn: false }
   );
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });
-test('pruneInstall({ ... }, { hasYarn: true })', t => {
+test('pruneInstall({ ... }, { hasYarn: true })', () => {
   const results = pruneInstall(
     {
       install: ['npm install --global yarn']
     },
     { hasYarn: true }
   );
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });
 
-test('updateNpm({}, { hasYarn: false })', t => {
+test('updateNpm({}, { hasYarn: false })', () => {
   const results = updateNpm({}, { hasYarn: false });
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });
-test('updateNpm({}, { hasYarn: true })', t => {
+test('updateNpm({}, { hasYarn: true })', () => {
   const results = updateNpm({}, { hasYarn: true });
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });

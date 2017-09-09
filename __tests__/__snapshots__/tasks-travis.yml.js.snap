@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruneCache({}, { hasYarn: false }) 1`] = `Object {}`;
+
+exports[`pruneInstall({ ... }, { hasYarn: false }) 1`] = `Object {}`;
+
+exports[`pruneInstall({ ... }, { hasYarn: true }) 1`] = `
+Object {
+  "install": Array [
+    "npm install --global yarn",
+  ],
+}
+`;
+
+exports[`updateNpm({}, { hasYarn: false }) 1`] = `
+Object {
+  "install": Array [
+    "npm install --global npm",
+  ],
+}
+`;
+
+exports[`updateNpm({}, { hasYarn: true }) 1`] = `
+Object {
+  "install": Array [
+    "npm install --global npm",
+    "npm install --global yarn",
+  ],
+}
+`;
