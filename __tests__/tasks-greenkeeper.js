@@ -1,16 +1,14 @@
 /* @flow */
 'use strict';
 
-const test = require('ava');
-
 const { pkgUpdater } = require('../lib/tasks/greenkeeper.js');
 
-test('fresh package.json', t => {
+test('fresh package.json', () => {
   const result = pkgUpdater({ name: 'my-package', version: '1.2.3' });
-  t.deepEqual(result, { name: 'my-package', version: '1.2.3' });
+  expect(result).toEqual({ name: 'my-package', version: '1.2.3' });
 });
 
-test('old package.json', t => {
+test('old package.json', () => {
   const result = pkgUpdater({
     name: 'my-package',
     version: '1.2.3',
@@ -23,7 +21,7 @@ test('old package.json', t => {
       test: 'exit 0'
     }
   });
-  t.deepEqual(result, {
+  expect(result).toEqual({
     name: 'my-package',
     version: '1.2.3',
     devDependencies: {

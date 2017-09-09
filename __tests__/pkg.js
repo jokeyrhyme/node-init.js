@@ -2,8 +2,6 @@
 
 const path = require('path');
 
-const test = require('ava');
-
 const { getScope, injectScope, isReactProject } = require('../lib/pkg.js');
 
 function shortCwd(cwd) {
@@ -25,8 +23,8 @@ const getScopeData = [
 ];
 
 getScopeData.forEach(d =>
-  test(`getScope("${shortCwd(d.cwd)}", "${d.scope}")`, t =>
-    getScope(d.cwd, d.scope).then(scope => t.is(scope, d.expected)))
+  test(`getScope("${shortCwd(d.cwd)}", "${d.scope}")`, () =>
+    getScope(d.cwd, d.scope).then(scope => expect(scope).toBe(d.expected)))
 );
 
 const injectScopeData = [
@@ -38,8 +36,8 @@ const injectScopeData = [
 ];
 
 injectScopeData.forEach(d =>
-  test(`injectScope(${JSON.stringify(d.args)})`, t =>
-    t.is(injectScope(...d.args), d.expected))
+  test(`injectScope(${JSON.stringify(d.args)})`, () =>
+    expect(injectScope(...d.args)).toBe(d.expected))
 );
 
 /* :: import type { PackageJSON, ReactProjectData } from '../lib/types.js' */
@@ -66,6 +64,6 @@ const isReactProjectData /* : Array<ReactProjectData> */ = [
 ];
 
 isReactProjectData.forEach(d =>
-  test(`isReactProject(${JSON.stringify(d.pkg)})`, t =>
-    t.is(isReactProject(d.pkg), d.expected))
+  test(`isReactProject(${JSON.stringify(d.pkg)})`, () =>
+    expect(isReactProject(d.pkg)).toBe(d.expected))
 );

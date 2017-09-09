@@ -1,7 +1,5 @@
 'use strict';
 
-const test = require('ava');
-
 const { ensureArrayTail } = require('../lib/data.js');
 
 const ensureArrayTailData = [
@@ -10,6 +8,6 @@ const ensureArrayTailData = [
 ];
 
 ensureArrayTailData.forEach(d =>
-  test(`ensureArrayTail(${JSON.stringify(d.args)})`, t =>
-    t.deepEqual(ensureArrayTail(...d.args), d.expected))
+  test(`ensureArrayTail(${JSON.stringify(d.args)})`, () =>
+    expect(ensureArrayTail(...d.args)).toEqual(d.expected))
 );

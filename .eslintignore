@@ -4,3 +4,5 @@ build
 coverage
 
 dist
+
+flow-typed

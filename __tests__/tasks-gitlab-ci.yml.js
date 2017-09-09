@@ -1,23 +1,21 @@
 /* @flow */
 'use strict';
 
-const test = require('ava');
-
 const {
   isNeeded,
   lib: { editConfig }
 } = require('../lib/tasks/gitlab-ci.yml.js');
 
-test('editConfig({}, { hasYarn: false })', t => {
+test('editConfig({}, { hasYarn: false })', () => {
   const results = editConfig({}, { hasYarn: false, majors: [8] });
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });
-test('editConfig({}, { hasYarn: true })', t => {
+test('editConfig({}, { hasYarn: true })', () => {
   const results = editConfig({}, { hasYarn: true, majors: [8] });
-  t.snapshot(results);
+  expect(results).toMatchSnapshot();
 });
 
-test('isNeeded()', async t => {
+test('isNeeded()', async () => {
   const result = await isNeeded({ cwd: process.cwd(), scope: '' });
-  t.is(typeof result, 'boolean');
+  expect(typeof result).toBe('boolean');
 });
