@@ -8,6 +8,8 @@
 
 -   require Node.js 8.x, drop support for older versions
 
+-   move .eslintignore into package.json:eslintIgnore
+
 
 ## 2.3.0 - 2017-07-30
 
