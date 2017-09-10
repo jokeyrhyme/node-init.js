@@ -19,7 +19,7 @@ const getScopeData = [
   { cwd: fixturePath('named'), scope: 'org', expected: 'org' },
   { cwd: fixturePath('named'), scope: '', expected: '' },
   { cwd: fixturePath('scoped'), scope: '', expected: 'myscope' },
-  { cwd: fixturePath('scoped'), scope: 'org', expected: 'org' }
+  { cwd: fixturePath('scoped'), scope: 'org', expected: 'org' },
 ];
 
 getScopeData.forEach(d =>
@@ -32,7 +32,7 @@ const injectScopeData = [
   { args: ['', 'name'], expected: 'name' },
   { args: ['new', 'name'], expected: '@new/name' },
   { args: ['', '@org/name'], expected: '@org/name' },
-  { args: ['new', '@org/name'], expected: '@new/name' }
+  { args: ['new', '@org/name'], expected: '@new/name' },
 ];
 
 injectScopeData.forEach(d =>
@@ -47,20 +47,20 @@ const isReactProjectData /* : Array<ReactProjectData> */ = [
   { pkg: { name: 'a', version: '1', dependencies: {} }, expected: false },
   {
     pkg: { name: 'a', version: '1', dependencies: { react: '*' } },
-    expected: true
+    expected: true,
   },
   {
     pkg: { name: 'a', version: '1', devDependencies: { react: '*' } },
-    expected: true
+    expected: true,
   },
   {
     pkg: { name: 'a', version: '1', devDependencies: { 'react-scripts': '*' } },
-    expected: true
+    expected: true,
   },
   {
     pkg: { name: 'a', version: '1', peerDependencies: { react: '*' } },
-    expected: true
-  }
+    expected: true,
+  },
 ];
 
 isReactProjectData.forEach(d =>

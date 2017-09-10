@@ -3,7 +3,7 @@
 
 const {
   isNeeded,
-  lib: { pruneCache, pruneInstall, updateNodeNpm }
+  lib: { pruneCache, pruneInstall, updateNodeNpm },
 } = require('../lib/tasks/appveyor.yml.js');
 
 test('isNeeded()', async () => {
@@ -19,7 +19,7 @@ test('pruneCache({}, { hasYarn: false })', () => {
 test('pruneInstall({ ... }, { hasYarn: false })', () => {
   const results = pruneInstall(
     {
-      install: ['npm install --global yarn']
+      install: ['npm install --global yarn'],
     },
     { hasYarn: false }
   );
@@ -28,7 +28,7 @@ test('pruneInstall({ ... }, { hasYarn: false })', () => {
 test('pruneInstall({ ... }, { hasYarn: true })', () => {
   const results = pruneInstall(
     {
-      install: ['npm install --global yarn']
+      install: ['npm install --global yarn'],
     },
     { hasYarn: true }
   );

@@ -30,9 +30,9 @@ Examples
 `,
   {
     default: {
-      checkGitStatus: true
+      checkGitStatus: true,
     },
-    string: ['scope']
+    string: ['scope'],
   }
 );
 

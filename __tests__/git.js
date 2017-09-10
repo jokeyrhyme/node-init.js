@@ -14,7 +14,7 @@ const {
   getOriginUrl,
   init,
   isGitClean,
-  isGitProject
+  isGitProject,
 } = require('../lib/git.js');
 
 let tempDir;
@@ -41,12 +41,12 @@ const getBitbucketPathData = [
   { args: [''], expected: '' },
   {
     args: ['git@bitbucket.org:username/project.git'],
-    expected: 'username/project'
+    expected: 'username/project',
   },
   {
     args: ['https://username@bitbucket.org/username/project.git'],
-    expected: 'username/project'
-  }
+    expected: 'username/project',
+  },
 ];
 
 getBitbucketPathData.forEach(d =>
@@ -58,12 +58,12 @@ const getGitHubPathData = [
   { args: [''], expected: '' },
   {
     args: ['git@github.com:username/project.git'],
-    expected: 'username/project'
+    expected: 'username/project',
   },
   {
     args: ['https://github.com/username/project.git'],
-    expected: 'username/project'
-  }
+    expected: 'username/project',
+  },
 ];
 
 getGitHubPathData.forEach(d =>

@@ -54,7 +54,7 @@ test('git-init.js before tasks that use `git` or .git/', () => {
     'badge-appveyor.js',
     'badge-travis.js',
     'npm-init.js',
-    'travis.yml'
+    'travis.yml',
   ]);
 });
 
@@ -73,7 +73,7 @@ test('npm-init.js before tasks that use package.json', () => {
     'npm-name.js',
     'npm-publish-config.js',
     'npm-test.js',
-    'travis.yml.js'
+    'travis.yml.js',
   ]);
 });
 
@@ -107,7 +107,7 @@ test('sort-package-json.js after tasks that use package.json (except npm-dev-dep
       'npm-name.js',
       'npm-publish-config.js',
       'npm-test.js',
-      'travis.yml.js'
+      'travis.yml.js',
     ],
     'sort-package-json.js'
   );

@@ -14,21 +14,21 @@ test('old package.json', () => {
     version: '1.2.3',
     devDependencies: {
       'greenkeeper-postpublish': '1.2.3',
-      something: '1.2.3'
+      something: '1.2.3',
     },
     scripts: {
       postpublish: 'greenkeeper-postpublish',
-      test: 'exit 0'
-    }
+      test: 'exit 0',
+    },
   });
   expect(result).toEqual({
     name: 'my-package',
     version: '1.2.3',
     devDependencies: {
-      something: '1.2.3'
+      something: '1.2.3',
     },
     scripts: {
-      test: 'exit 0'
-    }
+      test: 'exit 0',
+    },
   });
 });
