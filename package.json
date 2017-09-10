@@ -77,6 +77,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "eslintIgnore": [
+    "build",
+    "coverage",
+    "dist",
+    "flow-typed"
+  ],
   "jest": {
     "collectCoverage": true,
     "coverageThreshold": {
