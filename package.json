@@ -28,7 +28,7 @@
     "sort-package-json": "npx -q sort-package-json",
     "pretest": "npm run prettier && npm run eslint && npm run sort-package-json",
     "test": "npm run jest && npm run nsp && npm run flow",
-    "prettier": "npx -q prettier --list-different --single-quote --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
+    "prettier": "npx -q prettier --list-different --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
   },
   "dependencies": {
     "chalk": "2.1.0",
@@ -84,5 +84,9 @@
         "lines": 55
       }
     }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingCommas": "es5"
   }
 }

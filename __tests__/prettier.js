@@ -4,6 +4,9 @@ const os = require('os');
 
 const execa = require('execa');
 
+const TEN_SECONDS = 10 * 1e3;
+jest.setTimeout(TEN_SECONDS);
+
 test('`npm run prettier` finds correct files', async () => {
   let { stdout } = await execa('npm', [
     'run',
