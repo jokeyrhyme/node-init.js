@@ -1,6 +1,6 @@
 {
   "name": "@jokeyrhyme/node-init",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "impose my will upon a new or existing Node.js project",
   "keywords": [],
   "homepage": "https://github.com/jokeyrhyme/node-init.js#readme",
@@ -47,7 +47,7 @@
     "lodash.without": "^4.3.0",
     "log-update": "2.1.0",
     "meow": "3.7.0",
-    "node-fetch": "^1.7.1",
+    "node-fetch": "^1.7.3",
     "p-memoize": "1.0.0",
     "package-engines-notifier": "1.1.0",
     "pify": "3.0.0",
@@ -62,13 +62,13 @@
     "write-json-file": "2.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-plugin-ava": "^4.2.1",
+    "eslint": "^4.6.1",
+    "eslint-plugin-ava": "^4.2.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "jest": "^21.0.2",
-    "npx": "^9.5.0"
+    "npx": "^9.6.0"
   },
   "engines": {
     "node": ">=8",

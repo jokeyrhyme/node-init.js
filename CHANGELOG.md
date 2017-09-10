@@ -4,11 +4,16 @@
 ## Unreleased
 
 
+## 3.0.0 - 2017-09-11
+
+
 ### Changed
 
 -   require Node.js 8.x, drop support for older versions
 
 -   move .eslintignore into package.json:eslintIgnore
+
+-   enable prettier's trailingComma setting in ES5 mode
 
 
 ## 2.3.0 - 2017-07-30
