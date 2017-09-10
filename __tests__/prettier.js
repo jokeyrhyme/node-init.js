@@ -12,7 +12,7 @@ test('`npm run prettier` finds correct files', async () => {
     'run',
     'prettier',
     '--',
-    '--no-list-different'
+    '--no-list-different',
   ]);
 
   expect(stdout).toMatch(/__tests__\/prettier\.js/);

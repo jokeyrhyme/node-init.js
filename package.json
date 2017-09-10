@@ -87,6 +87,6 @@
   },
   "prettier": {
     "singleQuote": true,
-    "trailingCommas": "es5"
+    "trailingComma": "es5"
   }
 }

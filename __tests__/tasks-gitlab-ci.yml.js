@@ -3,7 +3,7 @@
 
 const {
   isNeeded,
-  lib: { editConfig }
+  lib: { editConfig },
 } = require('../lib/tasks/gitlab-ci.yml.js');
 
 test('editConfig({}, { hasYarn: false })', () => {

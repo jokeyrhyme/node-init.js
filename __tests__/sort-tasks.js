@@ -8,7 +8,7 @@ test('tasks without metadata', () => {
   const tasks = [
     { fn: noop, id: 'a', label: 'a' },
     { fn: noop, id: 'b', label: 'b' },
-    { fn: noop, id: 'c', label: 'c' }
+    { fn: noop, id: 'c', label: 'c' },
   ];
   expect(() => tasks.sort(compareByMetadata)).not.toThrow();
 });
@@ -17,7 +17,7 @@ test('2x "provides: FOO" and 1x "requires: FOO"', () => {
   const tasks = [
     { fn: noop, id: 'a', label: 'a', provides: ['FOO'] },
     { fn: noop, id: 'b', label: 'b', requires: ['FOO'] },
-    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] }
+    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] },
   ];
   expect(() => tasks.sort(compareByMetadata)).not.toThrow();
   const ids = tasks.map(task => task.id);
@@ -28,7 +28,7 @@ test('1x "provides: FOO" and 2x "requires: FOO"', () => {
   const tasks = [
     { fn: noop, id: 'a', label: 'a', requires: ['FOO'] },
     { fn: noop, id: 'b', label: 'b', requires: ['FOO'] },
-    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] }
+    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] },
   ];
   expect(() => tasks.sort(compareByMetadata)).not.toThrow();
   const ids = tasks.map(task => task.id);
@@ -39,7 +39,7 @@ test('2x "provides: FOO" and 1x "settles: FOO"', () => {
   const tasks = [
     { fn: noop, id: 'a', label: 'a', provides: ['FOO'] },
     { fn: noop, id: 'b', label: 'b', settles: ['FOO'] },
-    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] }
+    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] },
   ];
   expect(() => tasks.sort(compareByMetadata)).not.toThrow();
   const ids = tasks.map(task => task.id);
@@ -50,7 +50,7 @@ test('"provides: FOO" and "requires: FOO" and "settles: FOO"', () => {
   const tasks = [
     { fn: noop, id: 'a', label: 'a', settles: ['FOO'] },
     { fn: noop, id: 'b', label: 'b', requires: ['FOO'] },
-    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] }
+    { fn: noop, id: 'c', label: 'c', provides: ['FOO'] },
   ];
   expect(() => tasks.sort(compareByMetadata)).not.toThrow();
   const ids = tasks.map(task => task.id);
@@ -62,7 +62,7 @@ test('A, A->B, B->C, BC->end', () => {
     { fn: noop, id: 'a', label: 'a', requires: ['B', 'C'] },
     { fn: noop, id: 'b', label: 'b', provides: ['C'], requires: ['B'] },
     { fn: noop, id: 'c', label: 'c', provides: ['B'], requires: ['A'] },
-    { fn: noop, id: 'd', label: 'd', provides: ['A'] }
+    { fn: noop, id: 'd', label: 'd', provides: ['A'] },
   ];
   expect(() => tasks.sort(compareByMetadata)).not.toThrow();
   const ids = tasks.map(task => task.id);
