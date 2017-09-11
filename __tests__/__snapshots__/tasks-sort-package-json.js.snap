@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fn() 1`] = `
+Array [
+  Array [
+    "npm",
+    Array [
+      "uninstall",
+      "--save-dev",
+      "fixpack",
+    ],
+    Object {
+      "cwd": "/home/ron/GitHub/jokeyrhyme/node-init.js",
+    },
+  ],
+]
+`;
+
+exports[`fn() 2`] = `
+Object {
+  "scripts": Object {
+    "pretest": "npm run sort-package-json",
+    "sort-package-json": "npx -q sort-package-json",
+  },
+}
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fn() 1`] = `
+Array [
+  Array [
+    "npm",
+    Array [
+      "uninstall",
+      "--save-dev",
+      "eslint-config-semistandard",
+      "eslint-config-standard",
+      "eslint-config-standard-jsx",
+      "eslint-config-standard-react",
+      "eslint-plugin-standard",
+    ],
+    Object {
+      "cwd": "/home/ron/GitHub/jokeyrhyme/node-init.js",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "install",
+      "--save-dev",
+      "eslint",
+      "eslint-plugin-import",
+      "eslint-plugin-node",
+      "eslint-plugin-promise",
+    ],
+    Object {
+      "cwd": "/home/ron/GitHub/jokeyrhyme/node-init.js",
+    },
+  ],
+]
+`;
+
+exports[`fn() 2`] = `"/home/ron/GitHub/jokeyrhyme/node-init.js/package.json"`;
+
+exports[`fn() 3`] = `
+Object {
+  "scripts": Object {
+    "eslint": "eslint --fix --cache .",
+    "pretest": "npm run eslint",
+  },
+}
+`;
+
+exports[`fn() 4`] = `"/home/ron/GitHub/jokeyrhyme/node-init.js/package.json"`;
+
+exports[`fn() 5`] = `
+Object {
+  "eslintIgnore": Array [
+    "build",
+    "coverage",
+    "dist",
+  ],
+}
+`;

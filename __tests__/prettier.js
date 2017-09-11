@@ -7,6 +7,8 @@ const execa = require('execa');
 const FIFTEEN_SECONDS = 15 * 1e3;
 jest.setTimeout(FIFTEEN_SECONDS);
 
+jest.unmock('execa');
+
 test('`npm run prettier` finds correct files', async () => {
   let { stdout } = await execa('npm', [
     'run',

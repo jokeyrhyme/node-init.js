@@ -8,6 +8,8 @@ const { promisify } = require('util');
 const pify = require('pify');
 const rimraf = require('rimraf');
 
+jest.unmock('execa');
+
 const {
   getBitbucketPath,
   getGitHubPath,
