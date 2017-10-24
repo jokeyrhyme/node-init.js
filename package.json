@@ -31,7 +31,7 @@
     "prettier": "npx -q prettier --list-different --write \"{,!(build|coverage|dist|flow-typed|typings|vendor)/**/}*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
   },
   "dependencies": {
-    "chalk": "2.2.0",
+    "chalk": "2.2.2",
     "detect-flowtype": "2.0.0",
     "execa": "0.8.0",
     "figures": "2.0.0",
