@@ -29,10 +29,15 @@ Examples
     $ node-init my-project --scope my-org
 `,
   {
-    default: {
-      checkGitStatus: true,
+    flags: {
+      checkGitStatus: {
+        default: true,
+        type: 'boolean',
+      },
+      scope: {
+        type: 'string',
+      },
     },
-    string: ['scope'],
   }
 );
 
