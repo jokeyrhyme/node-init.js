@@ -58,7 +58,7 @@
     "update-json-file": "^1.1.1",
     "update-nodejs-notifier": "1.1.1",
     "update-notifier": "2.3.0",
-    "vinyl-fs": "2.4.4",
+    "vinyl-fs": "3.0.0",
     "write-json-file": "2.3.0"
   },
   "devDependencies": {
