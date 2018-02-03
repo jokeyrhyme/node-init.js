@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`npmScript() versus empty package.json 1`] = `
+Object {
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
+  "scripts": Object {
+    "pretest": "npm run prettier",
+    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,jsx,less,scss,ts,tsx}\\" || exit 0",
+  },
+}
+`;
+
+exports[`npmScript() versus engines.node >= 8 1`] = `
+Object {
+  "engines": Object {
+    "node": ">=8",
+  },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "all",
+  },
+  "scripts": Object {
+    "pretest": "npm run prettier",
+    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,jsx,less,scss,ts,tsx}\\" || exit 0",
+  },
+}
+`;

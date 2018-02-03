@@ -2,6 +2,7 @@ build: 'off'
 environment:
   matrix:
     - nodejs_version: '8'
+    - nodejs_version: '9'
 install:
   - ps: 'Install-Product node $env:nodejs_version x64'
   - npm install --global npm-windows-upgrade

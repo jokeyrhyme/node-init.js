@@ -54,7 +54,11 @@ const isReactProjectData /* : Array<ReactProjectData> */ = [
     expected: true,
   },
   {
-    pkg: { name: 'a', version: '1', devDependencies: { 'react-scripts': '*' } },
+    pkg: {
+      name: 'a',
+      version: '1',
+      devDependencies: { 'react-scripts': '*' },
+    },
     expected: true,
   },
   {
