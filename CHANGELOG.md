@@ -4,11 +4,40 @@
 ## Unreleased
 
 
+## 3.1.0 - 2018-02-04
+
+
 ### Changed
 
 -   use [.prettierignore](https://github.com/prettier/prettier/releases/tag/1.6.0) file instead of a complicated glob
 
 -   prettier: trailingComma='all' for Node.js 8+
+
+-   update [chalk](https://www.npmjs.com/package/chalk) to 2.2.2 (from 2.1.0)
+
+-   update [detect-flowtype](https://www.npmjs.com/package/detect-flowtype) to [2.0.0](https://github.com/jokeyrhyme/detect-flowtype-js/releases/tag/2.0.0) (from [1.0.0](https://github.com/jokeyrhyme/detect-flowtype-js/blob/master/CHANGELOG.md))
+
+-   update [execa](https://www.npmjs.com/package/execa) to 0.9.0 (from 0.8.0)
+
+-   update [js-yaml](https://www.npmjs.com/package/js-yaml) to [3.10.0](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md) (from [3.9.1](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md))
+
+-   update [load-json-file](https://www.npmjs.com/package/load-json-file) to 4.0.0 (from 3.0.0)
+
+-   update [log-update](https://www.npmjs.com/package/log-update) to 2.3.0 (from 2.1.0)
+
+-   update [meow](https://www.npmjs.com/package/meow) to [4.0.0](https://github.com/sindresorhus/meow/releases/tag/v4.0.0) (from 3.7.0)
+
+-   update [node-fetch](https://www.npmjs.com/package/node-fetch) to [2.0.0](https://github.com/bitinn/node-fetch/releases/tag/v2.0.0) (from [1.7.3](https://github.com/bitinn/node-fetch/releases/tag/1.7.3))
+
+-   update [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) to 3.0.0 (from 2.0.0)
+
+-   update [rimraf](https://www.npmjs.com/package/rimraf) to 2.6.2 (from 2.6.1)
+
+-   update [update-notifier](https://www.npmjs.com/package/update-notifier) to 2.3.0 (from [2.2.0](https://github.com/yeoman/update-notifier/releases/tag/v2.2.0))
+
+-   update [vinyl-fs](https://www.npmjs.com/package/vinyl-fs) to [3.0.0](https://github.com/gulpjs/vinyl-fs/releases/tag/v3.0.0) (from [2.4.4](https://github.com/gulpjs/vinyl-fs/releases/tag/v2.4.4))
+
+-   update [write-json-file](https://www.npmjs.com/package/write-json-file) to 2.3.0 (from 2.2.0)
 
 
 ## 3.0.0 - 2017-09-11
