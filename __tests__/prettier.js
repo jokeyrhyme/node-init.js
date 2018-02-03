@@ -37,3 +37,14 @@ test('npmScript() versus empty package.json', async () => {
 
   expect(pkg).toMatchSnapshot();
 });
+
+test('npmScript() versus engines.node >= 8', async () => {
+  const pkg = {
+    engines: { node: '>=8' },
+  };
+  require('update-json-file').__setPackage(pkg);
+
+  await npmScript('some/path');
+
+  expect(pkg).toMatchSnapshot();
+});

@@ -12,3 +12,19 @@ Object {
   },
 }
 `;
+
+exports[`npmScript() versus engines.node >= 8 1`] = `
+Object {
+  "engines": Object {
+    "node": ">=8",
+  },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "all",
+  },
+  "scripts": Object {
+    "pretest": "npm run prettier",
+    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,jsx,less,scss,ts,tsx}\\" || exit 0",
+  },
+}
+`;
