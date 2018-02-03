@@ -3,6 +3,8 @@
 
 ## Unreleased
 
+-   use [.prettierignore](https://github.com/prettier/prettier/releases/tag/1.6.0) file instead of a complicated glob
+
 
 ## 3.0.0 - 2017-09-11
 
