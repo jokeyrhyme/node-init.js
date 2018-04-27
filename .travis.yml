@@ -12,6 +12,7 @@ addons:
 node_js:
   - '8'
   - '9'
+  - '10'
 install:
   - npm install --global npm
   - npm install
