@@ -6,7 +6,9 @@ const os = require('os');
 
 const execa = require('execa');
 
-const { lib: { npmScript } } = require('../lib/tasks/prettier.js');
+const {
+  lib: { npmScript },
+} = require('../lib/tasks/prettier.js');
 
 const TEN_SECONDS = 10 * 1e3;
 jest.setTimeout(TEN_SECONDS);
