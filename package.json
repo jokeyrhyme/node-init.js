@@ -7,6 +7,10 @@
   "bugs": {
     "url": "https://github.com/jokeyrhyme/node-init.js/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/node-init.js.git"
+  },
   "license": "BSD-2-Clause",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
   "main": "lib/index.js",
@@ -16,19 +20,32 @@
   "directories": {
     "lib": "lib"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/node-init.js.git"
-  },
   "scripts": {
     "eslint": "eslint --fix --cache .",
     "flow": "npx -q flow-bin@^0.64.0 check",
     "jest": "jest",
-    "nsp": "npx -q nsp check",
     "sort-package-json": "npx -q sort-package-json",
     "pretest": "npm run prettier && npm run eslint && npm run sort-package-json",
-    "test": "npm run jest && npm run nsp && npm run flow",
+    "test": "npm run jest && npm audit && npm run flow",
     "prettier": "npx -q prettier --list-different --write \"**/*.{css,js,jsx,less,scss,ts,tsx}\" || exit 0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintIgnore": [
+    "build",
+    "coverage",
+    "dist",
+    "flow-typed"
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "lines": 55
+      }
+    }
   },
   "dependencies": {
     "chalk": "2.3.2",
@@ -47,13 +64,13 @@
     "lodash.without": "^4.3.0",
     "log-update": "2.3.0",
     "meow": "4.0.1",
-    "node-fetch": "^2.0.0",
+    "node-fetch": "^2.1.2",
     "p-memoize": "1.0.0",
     "package-engines-notifier": "1.1.0",
     "pify": "3.0.0",
     "read-pkg-up": "3.0.0",
     "rimraf": "2.6.2",
-    "semver": "^5.4.1",
+    "semver": "^5.5.0",
     "through2": "2.0.3",
     "update-json-file": "^1.1.1",
     "update-nodejs-notifier": "1.1.1",
@@ -62,37 +79,18 @@
     "write-json-file": "2.3.0"
   },
   "devDependencies": {
-    "eslint": "^4.6.1",
-    "eslint-plugin-ava": "^4.2.2",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-ava": "^4.5.1",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "jest": "^22.1.4",
-    "npx": "^10.0.1"
+    "eslint-plugin-promise": "^3.7.0",
+    "jest": "^22.4.4"
   },
   "engines": {
     "node": ">=8",
-    "npm": ">=3"
+    "npm": ">=6"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "eslintIgnore": [
-    "build",
-    "coverage",
-    "dist",
-    "flow-typed"
-  ],
-  "jest": {
-    "collectCoverage": true,
-    "coverageThreshold": {
-      "global": {
-        "lines": 55
-      }
-    }
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5"
   }
 }
