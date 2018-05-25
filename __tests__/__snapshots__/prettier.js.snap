@@ -8,7 +8,7 @@ Object {
   },
   "scripts": Object {
     "pretest": "npm run prettier",
-    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,jsx,less,scss,ts,tsx}\\" || exit 0",
+    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\" || exit 0",
   },
 }
 `;
@@ -24,7 +24,7 @@ Object {
   },
   "scripts": Object {
     "pretest": "npm run prettier",
-    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,jsx,less,scss,ts,tsx}\\" || exit 0",
+    "prettier": "npx -q prettier --list-different --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\" || exit 0",
   },
 }
 `;

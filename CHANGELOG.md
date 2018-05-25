@@ -4,6 +4,11 @@
 ## Unreleased
 
 
+### Changed
+
+-   use pretter on Markdown and JSON files
+
+
 ## 3.1.0 - 2018-02-04
 
 
@@ -456,5 +461,3 @@
 -   npm-engines: use faster `process.version`, not `node --version`
 
 -   skip `npm install --save-dev` steps if already in devDependencies
-
-
