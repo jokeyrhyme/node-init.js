@@ -51,7 +51,7 @@ const getBitbucketPathData = [
 
 getBitbucketPathData.forEach(d =>
   test(`getBitbucketPath(${JSON.stringify(d.args)})`, () =>
-    expect(getBitbucketPath(...d.args)).toBe(d.expected))
+    expect(getBitbucketPath(...d.args)).toBe(d.expected)),
 );
 
 const getGitHubPathData = [
@@ -68,7 +68,7 @@ const getGitHubPathData = [
 
 getGitHubPathData.forEach(d =>
   test(`getGitHubPath(${JSON.stringify(d.args)})`, () =>
-    expect(getGitHubPath(...d.args)).toBe(d.expected))
+    expect(getGitHubPath(...d.args)).toBe(d.expected)),
 );
 
 test('isGitProject(__dirname) is true', async () => {

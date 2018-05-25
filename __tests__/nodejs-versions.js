@@ -9,7 +9,7 @@ test(
     expect(Array.isArray(versions)).toBe(true);
     expect(versions.length > 0).toBe(true);
   },
-  20e3
+  20e3,
 );
 
 const versions20161019 = [

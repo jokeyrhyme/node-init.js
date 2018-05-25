@@ -5,7 +5,7 @@ let pkg /* : Object */ = {};
 
 module.exports = async (
   pkgPath /* : string */,
-  updater /* : (value: any) => Promise<any> */
+  updater /* : (value: any) => Promise<any> */,
 ) /* : Promise<void> */ => {
   await updater(pkg);
 };

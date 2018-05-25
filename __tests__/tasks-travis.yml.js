@@ -21,7 +21,7 @@ test('pruneInstall({ ... }, { hasYarn: false })', () => {
     {
       install: ['npm install --global yarn'],
     },
-    { hasYarn: false }
+    { hasYarn: false },
   );
   expect(results).toMatchSnapshot();
 });
@@ -30,7 +30,7 @@ test('pruneInstall({ ... }, { hasYarn: true })', () => {
     {
       install: ['npm install --global yarn'],
     },
-    { hasYarn: true }
+    { hasYarn: true },
   );
   expect(results).toMatchSnapshot();
 });

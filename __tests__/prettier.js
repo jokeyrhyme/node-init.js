@@ -14,12 +14,7 @@ const TEN_SECONDS = 10 * 1e3;
 jest.setTimeout(TEN_SECONDS);
 
 test('`npm run prettier` finds correct files', async () => {
-  let { stdout } = await execa('npm', [
-    'run',
-    'prettier',
-    '--',
-    '--no-list-different',
-  ]);
+  let { stdout } = await execa('npm', ['run', 'prettier', '--']);
 
   // output on Windows includes the full path to prettier
   // so we have to strip it before the next assertion
