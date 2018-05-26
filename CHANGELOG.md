@@ -6,6 +6,8 @@
 
 * use `npm audit` over `nsp check` when available
 
+* rely on global `npx` with npm 5.2.x and newer
+
 * use pretter on Markdown and JSON files
 
 ## 3.1.0 - 2018-02-04
