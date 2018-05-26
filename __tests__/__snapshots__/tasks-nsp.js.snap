@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`npmScript() versus empty package.json 1`] = `
+Object {
+  "scripts": Object {
+    "nsp": "npx -q nsp check",
+    "test": "npm run nsp",
+  },
+}
+`;
+
+exports[`npmScript() versus engines.npm >= 6 1`] = `
+Object {
+  "engines": Object {
+    "npm": ">=6",
+  },
+  "scripts": Object {
+    "test": "npm audit",
+  },
+}
+`;
