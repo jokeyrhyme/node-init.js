@@ -1,8 +1,4 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:node/recommended",
-    "plugin:ava/recommended"
-  ],
-  "plugins": ["ava", "node", "import", "promise"]
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "plugins": ["node", "import", "promise"]
 }

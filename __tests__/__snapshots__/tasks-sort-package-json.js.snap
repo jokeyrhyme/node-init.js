@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`npmScript() versus empty package.json 1`] = `
+Object {
+  "scripts": Object {
+    "pretest": "npm run sort-package-json",
+    "sort-package-json": "npx -q sort-package-json",
+  },
+}
+`;
