@@ -9,5 +9,5 @@ const ensureArrayTailData = [
 
 ensureArrayTailData.forEach(d =>
   test(`ensureArrayTail(${JSON.stringify(d.args)})`, () =>
-    expect(ensureArrayTail(...d.args)).toEqual(d.expected))
+    expect(ensureArrayTail(...d.args)).toEqual(d.expected)),
 );

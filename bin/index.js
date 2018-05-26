@@ -38,7 +38,7 @@ Examples
         type: 'string',
       },
     },
-  }
+  },
 );
 
 if (!enginesNotify({ pkg: pkg })) {

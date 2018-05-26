@@ -24,7 +24,7 @@ const getScopeData = [
 
 getScopeData.forEach(d =>
   test(`getScope("${shortCwd(d.cwd)}", "${d.scope}")`, () =>
-    getScope(d.cwd, d.scope).then(scope => expect(scope).toBe(d.expected)))
+    getScope(d.cwd, d.scope).then(scope => expect(scope).toBe(d.expected))),
 );
 
 const injectScopeData = [
@@ -37,7 +37,7 @@ const injectScopeData = [
 
 injectScopeData.forEach(d =>
   test(`injectScope(${JSON.stringify(d.args)})`, () =>
-    expect(injectScope(...d.args)).toBe(d.expected))
+    expect(injectScope(...d.args)).toBe(d.expected)),
 );
 
 /* :: import type { PackageJSON, ReactProjectData } from '../lib/types.js' */
@@ -69,5 +69,5 @@ const isReactProjectData /* : Array<ReactProjectData> */ = [
 
 isReactProjectData.forEach(d =>
   test(`isReactProject(${JSON.stringify(d.pkg)})`, () =>
-    expect(isReactProject(d.pkg)).toBe(d.expected))
+    expect(isReactProject(d.pkg)).toBe(d.expected)),
 );

@@ -4,10 +4,5 @@
     "plugin:node/recommended",
     "plugin:ava/recommended"
   ],
-  "plugins": [
-    "ava",
-    "node",
-    "import",
-    "promise"
-  ]
+  "plugins": ["ava", "node", "import", "promise"]
 }

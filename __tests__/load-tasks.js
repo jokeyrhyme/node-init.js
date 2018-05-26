@@ -88,7 +88,7 @@ function assertTaskAfter(before /* : string[] */, after /* : string */) {
 test('npm-dev-deps.js after tasks that install devDeps', () => {
   assertTaskAfter(
     ['eslint.js', 'fixpack.js', 'flowtype.js'],
-    'npm-dev-deps.js'
+    'npm-dev-deps.js',
   );
 });
 
@@ -109,7 +109,7 @@ test('sort-package-json.js after tasks that use package.json (except npm-dev-dep
       'npm-test.js',
       'travis.yml.js',
     ],
-    'sort-package-json.js'
+    'sort-package-json.js',
   );
 });
 
