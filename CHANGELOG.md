@@ -4,7 +4,9 @@
 
 ### Changed
 
-* use pretter on Markdown and JSON files
+* flowtype: version flow-bin in devDependencies
+
+* pretter: code-style for Markdown and JSON files
 
 ## 3.1.0 - 2018-02-04
 

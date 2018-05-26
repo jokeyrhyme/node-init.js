@@ -22,7 +22,7 @@
   },
   "scripts": {
     "eslint": "eslint --fix --cache .",
-    "flow": "npx -q flow-bin@^0.73.0 check",
+    "flow": "flow check",
     "jest": "jest",
     "nsp": "npx -q nsp check",
     "sort-package-json": "npx -q sort-package-json",
@@ -85,6 +85,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.7.0",
+    "flow-bin": "^0.73.0",
     "jest": "^22.4.4",
     "npx": "^10.2.0"
   },
