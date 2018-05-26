@@ -4,6 +4,8 @@
 
 ### Changed
 
+* use `npm audit` over `nsp check` when available
+
 * use pretter on Markdown and JSON files
 
 ## 3.1.0 - 2018-02-04
