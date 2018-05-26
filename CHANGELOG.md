@@ -8,7 +8,9 @@
 
 * rely on global `npx` with npm 5.2.x and newer
 
-* use pretter on Markdown and JSON files
+* flowtype: version flow-bin in devDependencies
+
+* prettier: code-style for Markdown and JSON files
 
 ## 3.1.0 - 2018-02-04
 

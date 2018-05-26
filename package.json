@@ -22,7 +22,7 @@
   },
   "scripts": {
     "eslint": "eslint --fix --cache .",
-    "flow": "npx -q flow-bin@^0.73.0 check",
+    "flow": "flow check",
     "jest": "jest",
     "sort-package-json": "npx -q sort-package-json",
     "pretest": "npm run prettier && npm run eslint && npm run sort-package-json",
@@ -65,7 +65,7 @@
     "log-update": "2.3.0",
     "meow": "4.0.1",
     "node-fetch": "^2.1.2",
-    "p-memoize": "1.0.0",
+    "p-memoize": "2.0.0",
     "package-engines-notifier": "1.1.0",
     "pify": "3.0.0",
     "read-pkg-up": "3.0.0",
@@ -84,6 +84,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.7.0",
+    "flow-bin": "^0.73.0",
     "jest": "^22.4.4"
   },
   "engines": {
