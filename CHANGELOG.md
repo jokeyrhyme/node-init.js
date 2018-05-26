@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 3.2.0 - 2018-05-26
+
 ### Changed
 
 * use `npm audit` over `nsp check` when available
@@ -11,6 +13,26 @@
 * flowtype: version flow-bin in devDependencies
 
 * prettier: code-style for Markdown and JSON files
+
+- update [chalk](https://www.npmjs.com/package/chalk) to [2.3.2](https://github.com/chalk/chalk/releases/tag/v2.3.2) (from 2.2.2)
+
+- update [execa](https://www.npmjs.com/package/execa) to 0.10.0 (from 0.9.0)
+
+- update [js-yaml](https://www.npmjs.com/package/js-yaml) to [3.11.0](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md) (from [3.10.0](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md))
+
+- update [load-json-file](https://www.npmjs.com/package/load-json-file) to 5.0.0 (from 4.0.0)
+
+- update [meow](https://www.npmjs.com/package/meow) to 4.0.1 (from [4.0.0](https://github.com/sindresorhus/meow/releases/tag/v4.0.0))
+
+- update [node-fetch](https://www.npmjs.com/package/node-fetch) to [2.1.2](https://github.com/bitinn/node-fetch/releases/tag/v2.1.2) (from [2.0.0](https://github.com/bitinn/node-fetch/releases/tag/v2.0.0))
+
+- update [p-memoize](https://www.npmjs.com/package/p-memoize) to 2.0.0 (from 1.0.0)
+
+- update [semver](https://www.npmjs.com/package/semver) to 5.5.0 (from 5.4.1)
+
+- update [update-notifier](https://www.npmjs.com/package/update-notifier) to [2.5.0](https://github.com/yeoman/update-notifier/releases/tag/v2.5.0) (from 2.3.0)
+
+- update [vinyl-fs](https://www.npmjs.com/package/vinyl-fs) to [3.0.3](https://github.com/gulpjs/vinyl-fs/releases/tag/v3.0.3) (from [3.0.0](https://github.com/gulpjs/vinyl-fs/releases/tag/v3.0.0))
 
 ## 3.1.0 - 2018-02-04
 
