@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`eslintrcUpdater() fresh with react 1`] = `
+Object {
+  "extends": Array [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:react/recommended",
+  ],
+  "plugins": Array [
+    "import",
+    "node",
+    "promise",
+    "react",
+  ],
+}
+`;
+
+exports[`eslintrcUpdater() fresh without react 1`] = `
+Object {
+  "extends": Array [
+    "eslint:recommended",
+    "plugin:node/recommended",
+  ],
+  "plugins": Array [
+    "import",
+    "node",
+    "promise",
+  ],
+}
+`;
