@@ -79,7 +79,7 @@
     "write-json-file": "2.3.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^5.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.7.0",
