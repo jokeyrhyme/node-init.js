@@ -2,6 +2,14 @@
 
 exports[`fn() versus empty package.json 1`] = `
 Object {
+  "jest": Object {
+    "collectCoverage": true,
+    "coverageThreshold": Object {
+      "global": Object {
+        "lines": 90,
+      },
+    },
+  },
   "prettier": Object {
     "singleQuote": true,
     "trailingComma": "es5",
@@ -10,11 +18,12 @@ Object {
     "eslint": "eslint --cache --fix .",
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
+    "jest": "jest",
     "lint": "npm run eslint",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run lint",
+    "test": "npm run jest && npm run lint",
   },
 }
 `;
@@ -24,6 +33,14 @@ Object {
   "engines": Object {
     "node": ">=8",
   },
+  "jest": Object {
+    "collectCoverage": true,
+    "coverageThreshold": Object {
+      "global": Object {
+        "lines": 90,
+      },
+    },
+  },
   "prettier": Object {
     "singleQuote": true,
     "trailingComma": "all",
@@ -32,16 +49,17 @@ Object {
     "eslint": "eslint --cache --fix .",
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
+    "jest": "jest",
     "lint": "npm run eslint",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run lint",
+    "test": "npm run jest && npm run lint",
   },
 }
 `;
 
-exports[`fn() versus package.json with ava and nyc 1`] = `
+exports[`fn() with ava and nyc 1`] = `
 Object {
   "devDependencies": Object {
     "ava": "*",
@@ -66,7 +84,7 @@ Object {
 }
 `;
 
-exports[`fn() versus package.json with ava and pre-existing scripts 1`] = `
+exports[`fn() with ava and pre-existing scripts 1`] = `
 Object {
   "devDependencies": Object {
     "ava": "*",
@@ -89,8 +107,19 @@ Object {
 }
 `;
 
-exports[`fn() versus package.json with postpublish (old greenkeeper) 1`] = `
+exports[`fn() with jest and pre-existing settings 1`] = `
 Object {
+  "devDependencies": Object {
+    "jest": "*",
+  },
+  "jest": Object {
+    "collectCoverage": true,
+    "coverageThreshold": Object {
+      "global": Object {
+        "lines": 50,
+      },
+    },
+  },
   "prettier": Object {
     "singleQuote": true,
     "trailingComma": "es5",
@@ -99,17 +128,26 @@ Object {
     "eslint": "eslint --cache --fix .",
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
+    "jest": "jest",
     "lint": "npm run eslint",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run lint",
+    "test": "npm run jest && npm run lint",
   },
 }
 `;
 
-exports[`fn() versus package.json with postpublish 1`] = `
+exports[`fn() with postpublish (old greenkeeper) 1`] = `
 Object {
+  "jest": Object {
+    "collectCoverage": true,
+    "coverageThreshold": Object {
+      "global": Object {
+        "lines": 90,
+      },
+    },
+  },
   "prettier": Object {
     "singleQuote": true,
     "trailingComma": "es5",
@@ -118,12 +156,41 @@ Object {
     "eslint": "eslint --cache --fix .",
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
+    "jest": "jest",
+    "lint": "npm run eslint",
+    "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
+    "sort-package-json": "npx -q sort-package-json",
+    "test": "npm run jest && npm run lint",
+  },
+}
+`;
+
+exports[`fn() with postpublish 1`] = `
+Object {
+  "jest": Object {
+    "collectCoverage": true,
+    "coverageThreshold": Object {
+      "global": Object {
+        "lines": 90,
+      },
+    },
+  },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
+  "scripts": Object {
+    "eslint": "eslint --cache --fix .",
+    "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
+    "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
+    "jest": "jest",
     "lint": "npm run eslint",
     "postpublish": "true",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run lint",
+    "test": "npm run jest && npm run lint",
   },
 }
 `;

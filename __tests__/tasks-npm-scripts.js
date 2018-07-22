@@ -27,7 +27,7 @@ test('fn() versus engines.node >= 8', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
-test('fn() versus package.json with ava and nyc', async () => {
+test('fn() with ava and nyc', async () => {
   const pkg = {
     devDependencies: {
       ava: '*',
@@ -41,7 +41,7 @@ test('fn() versus package.json with ava and nyc', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
-test('fn() versus package.json with ava and pre-existing scripts', async () => {
+test('fn() with ava and pre-existing scripts', async () => {
   const pkg = {
     devDependencies: {
       ava: '*',
@@ -57,7 +57,27 @@ test('fn() versus package.json with ava and pre-existing scripts', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
-test('fn() versus package.json with postpublish', async () => {
+test('fn() with jest and pre-existing settings', async () => {
+  const pkg = {
+    devDependencies: {
+      jest: '*',
+    },
+    jest: {
+      coverageThreshold: {
+        global: {
+          lines: 50,
+        },
+      },
+    },
+  };
+  require('update-json-file').__setPackage(pkg);
+
+  await fn({ cwd: 'some/path' });
+
+  expect(pkg).toMatchSnapshot();
+});
+
+test('fn() with postpublish', async () => {
   const pkg = {
     scripts: {
       postpublish: 'true',
@@ -70,7 +90,7 @@ test('fn() versus package.json with postpublish', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
-test('fn() versus package.json with postpublish (old greenkeeper)', async () => {
+test('fn() with postpublish (old greenkeeper)', async () => {
   const pkg = {
     scripts: {
       postpublish: 'greenkeeper-postpublish',
