@@ -57,6 +57,15 @@ test('fn() with ava and pre-existing scripts', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
+test('fn() versus empty package.json in Flow project', async () => {
+  const pkg = {};
+  require('update-json-file').__setPackage(pkg);
+
+  await fn({ cwd: 'some/path', isFlowProject: true });
+
+  expect(pkg).toMatchSnapshot();
+});
+
 test('fn() with jest and pre-existing settings', async () => {
   const pkg = {
     devDependencies: {
