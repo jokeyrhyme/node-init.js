@@ -46,23 +46,23 @@ const isReactProjectData /* : Array<ReactProjectData> */ = [
   { pkg: { name: 'a', version: '1' }, expected: false },
   { pkg: { name: 'a', version: '1', dependencies: {} }, expected: false },
   {
-    pkg: { name: 'a', version: '1', dependencies: { react: '*' } },
+    pkg:      { name: 'a', version: '1', dependencies: { react: '*' } },
     expected: true,
   },
   {
-    pkg: { name: 'a', version: '1', devDependencies: { react: '*' } },
+    pkg:      { name: 'a', version: '1', devDependencies: { react: '*' } },
     expected: true,
   },
   {
     pkg: {
-      name: 'a',
-      version: '1',
+      name:            'a',
+      version:         '1',
       devDependencies: { 'react-scripts': '*' },
     },
     expected: true,
   },
   {
-    pkg: { name: 'a', version: '1', peerDependencies: { react: '*' } },
+    pkg:      { name: 'a', version: '1', peerDependencies: { react: '*' } },
     expected: true,
   },
 ];
