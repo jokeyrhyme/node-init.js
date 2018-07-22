@@ -87,7 +87,7 @@
     "jest": "^22.4.4"
   },
   "engines": {
-    "node": ">=8",
+    "node": ">=10",
     "npm": ">=6"
   },
   "publishConfig": {

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fn() versus empty package.json 1`] = `
+Object {
+  "scripts": Object {},
+}
+`;
+
+exports[`fn() versus package.json with ava and nyc 1`] = `
+Object {
+  "devDependencies": Object {
+    "ava": "*",
+    "nyc": "*",
+  },
+  "scripts": Object {
+    "ava": "nyc ava",
+    "nyc": "nyc check-coverage",
+  },
+}
+`;
+
+exports[`fn() versus package.json with ava and pre-existing scripts 1`] = `
+Object {
+  "devDependencies": Object {
+    "ava": "*",
+  },
+  "scripts": Object {
+    "ava": "ava",
+    "test": "true",
+  },
+}
+`;

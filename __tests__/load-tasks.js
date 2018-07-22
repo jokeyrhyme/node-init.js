@@ -70,8 +70,10 @@ test('npm-init.js before tasks that use package.json', () => {
     'flowtype.js',
     'npm-dev-deps.js',
     'npm-engines.js',
+    'npm-install.js',
     'npm-name.js',
     'npm-publish-config.js',
+    'npm-scripts.js',
     'npm-test.js',
     'travis.yml.js',
   ]);
