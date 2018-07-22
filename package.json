@@ -60,6 +60,7 @@
     "load-json-file": "5.0.0",
     "locate-path": "^3.0.0",
     "lodash.intersection": "4.4.0",
+    "lodash.omit": "^4.5.0",
     "lodash.union": "^4.5.0",
     "lodash.without": "^4.3.0",
     "log-update": "2.3.0",

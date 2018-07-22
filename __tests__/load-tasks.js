@@ -74,6 +74,7 @@ test('npm-init.js before tasks that use package.json', () => {
     'npm-name.js',
     'npm-publish-config.js',
     'npm-scripts.js',
+    'npm-uninstall.js',
     'npm-test.js',
     'travis.yml.js',
   ]);
@@ -91,27 +92,6 @@ test('npm-dev-deps.js after tasks that install devDeps', () => {
   assertTaskAfter(
     ['eslint.js', 'fixpack.js', 'flowtype.js'],
     'npm-dev-deps.js',
-  );
-});
-
-test('sort-package-json.js after tasks that use package.json (except npm-dev-deps.js)', () => {
-  assertTaskAfter(
-    [
-      'appveyor.yml.js',
-      'badge-appveyor.js',
-      'badge-npm.js',
-      'badge-travis.js',
-      'eslint.js',
-      'eslintrc.json.js',
-      'flowtype.js',
-      'npm-engines.js',
-      'npm-init.js',
-      'npm-name.js',
-      'npm-publish-config.js',
-      'npm-test.js',
-      'travis.yml.js',
-    ],
-    'sort-package-json.js',
   );
 });
 
