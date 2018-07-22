@@ -27,6 +27,17 @@ test('fn() versus engines.node >= 8', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
+test('fn() versus engines.npm >= 6', async () => {
+  const pkg = {
+    engines: { npm: '>=6' },
+  };
+  require('update-json-file').__setPackage(pkg);
+
+  await fn({ cwd: 'some/path' });
+
+  expect(pkg).toMatchSnapshot();
+});
+
 test('fn() with ava and nyc', async () => {
   const pkg = {
     devDependencies: {

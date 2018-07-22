@@ -20,10 +20,11 @@ Object {
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "jest": "jest",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run jest && npm run lint",
+    "test": "npm run jest && npm run nsp && npm run lint",
   },
 }
 `;
@@ -49,10 +50,11 @@ Object {
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "jest": "jest",
     "lint": "npm run eslint && npm run flow",
+    "nsp": "npx -q nsp check",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run jest && npm run lint",
+    "test": "npm run jest && npm run nsp && npm run lint",
   },
 }
 `;
@@ -80,10 +82,42 @@ Object {
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "jest": "jest",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run jest && npm run lint",
+    "test": "npm run jest && npm run nsp && npm run lint",
+  },
+}
+`;
+
+exports[`fn() versus engines.npm >= 6 1`] = `
+Object {
+  "engines": Object {
+    "npm": ">=6",
+  },
+  "jest": Object {
+    "collectCoverage": true,
+    "coverageThreshold": Object {
+      "global": Object {
+        "lines": 90,
+      },
+    },
+  },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
+  "scripts": Object {
+    "eslint": "eslint --cache --fix .",
+    "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
+    "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
+    "jest": "jest",
+    "lint": "npm run eslint",
+    "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
+    "sort-package-json": "npx -q sort-package-json",
+    "test": "npm run jest && npm audit && npm run lint",
   },
 }
 `;
@@ -104,11 +138,12 @@ Object {
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "nyc": "nyc check-coverage",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run lint",
+    "test": "npm run nsp && npm run lint",
   },
 }
 `;
@@ -128,10 +163,11 @@ Object {
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint",
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "true && npm run lint",
+    "test": "true && npm run nsp && npm run lint",
   },
 }
 `;
@@ -159,10 +195,11 @@ Object {
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "jest": "jest",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run jest && npm run lint",
+    "test": "npm run jest && npm run nsp && npm run lint",
   },
 }
 `;
@@ -187,10 +224,11 @@ Object {
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "jest": "jest",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run jest && npm run lint",
+    "test": "npm run jest && npm run nsp && npm run lint",
   },
 }
 `;
@@ -215,11 +253,12 @@ Object {
     "fmt:eslint": "eslint --fix --no-eslintrc --parser-options \\"ecmaVersion:2018,ecmaFeatures:{jsx:true}\\" --rule \\"key-spacing:[error,{align:value}]\\" .",
     "jest": "jest",
     "lint": "npm run eslint",
+    "nsp": "npx -q nsp check",
     "postpublish": "true",
     "pretest": "npm run fmt",
     "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
-    "test": "npm run jest && npm run lint",
+    "test": "npm run jest && npm run nsp && npm run lint",
   },
 }
 `;
