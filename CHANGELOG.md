@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## [3.3.0] - 2018-07-22
+
 ### Added
 
 - new separate `npm run fmt` and `npm run fmt` scripts
@@ -15,6 +17,18 @@
 - combined some tasks to reduce boilerplate, increase determinism
 
 - scan for Flow annotations once, instead of twice or more
+
+- update [chalk](https://www.npmjs.com/package/chalk) to [2.4.1](https://github.com/chalk/chalk/releases/tag/v2.4.1) (from [2.3.2](https://github.com/chalk/chalk/releases/tag/v2.3.2))
+
+- update [js-yaml](https://www.npmjs.com/package/js-yaml) to [3.12.0](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md) (from [3.11.0](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md))
+
+- update [latest-version](https://www.npmjs.com/package/latest-version) to 4.0.0 (from 3.1.0)
+
+- update [locate-path](https://www.npmjs.com/package/locate-path) to 3.0.0 (from 2.0.0)
+
+- update [read-pkg-up](https://www.npmjs.com/package/read-pkg-up) to 4.0.0 (from 3.0.0)
+
+- depend upon [lodash.omit](https://www.npmjs.com/package/lodash.omit) 4.5.0
 
 ## 3.2.0 - 2018-05-26
 
