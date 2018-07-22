@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+### Added
+
+- new separate `npm run fmt` and `npm run fmt` scripts
+
+- `npm run fmt` aligns Object values the way `go fmt` does
+
+### Changed
+
+- reduced calls to `npm install` or `npm uninstall`
+
+- combined some tasks to reduce boilerplate, increase determinism
+
+- scan for Flow annotations once, instead of twice or more
+
 ## 3.2.0 - 2018-05-26
 
 ### Changed
