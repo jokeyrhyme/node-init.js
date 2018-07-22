@@ -56,3 +56,29 @@ test('fn() versus package.json with ava and pre-existing scripts', async () => {
 
   expect(pkg).toMatchSnapshot();
 });
+
+test('fn() versus package.json with postpublish', async () => {
+  const pkg = {
+    scripts: {
+      postpublish: 'true',
+    },
+  };
+  require('update-json-file').__setPackage(pkg);
+
+  await fn({ cwd: 'some/path' });
+
+  expect(pkg).toMatchSnapshot();
+});
+
+test('fn() versus package.json with postpublish (old greenkeeper)', async () => {
+  const pkg = {
+    scripts: {
+      postpublish: 'greenkeeper-postpublish',
+    },
+  };
+  require('update-json-file').__setPackage(pkg);
+
+  await fn({ cwd: 'some/path' });
+
+  expect(pkg).toMatchSnapshot();
+});

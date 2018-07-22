@@ -73,3 +73,34 @@ Object {
   },
 }
 `;
+
+exports[`fn() versus package.json with postpublish (old greenkeeper) 1`] = `
+Object {
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
+  "scripts": Object {
+    "fmt": "npm run sort-package-json && npm run prettier",
+    "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
+    "sort-package-json": "npx -q sort-package-json",
+  },
+}
+`;
+
+exports[`fn() versus package.json with postpublish 1`] = `
+Object {
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
+  "scripts": Object {
+    "fmt": "npm run sort-package-json && npm run prettier",
+    "postpublish": "true",
+    "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
+    "sort-package-json": "npx -q sort-package-json",
+  },
+}
+`;
