@@ -32,7 +32,7 @@ Examples
     flags: {
       checkGitStatus: {
         default: true,
-        type: 'boolean',
+        type:    'boolean',
       },
       scope: {
         type: 'string',
