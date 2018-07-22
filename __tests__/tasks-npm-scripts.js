@@ -16,14 +16,9 @@ test('fn() versus empty package.json', async () => {
   expect(pkg).toMatchSnapshot();
 });
 
-test('fn() versus package.json with ava and pre-existing scripts', async () => {
+test('fn() versus engines.node >= 8', async () => {
   const pkg = {
-    devDependencies: {
-      ava: '*',
-    },
-    scripts: {
-      test: 'true',
-    },
+    engines: { node: '>=8' },
   };
   require('update-json-file').__setPackage(pkg);
 
@@ -37,6 +32,22 @@ test('fn() versus package.json with ava and nyc', async () => {
     devDependencies: {
       ava: '*',
       nyc: '*',
+    },
+  };
+  require('update-json-file').__setPackage(pkg);
+
+  await fn({ cwd: 'some/path' });
+
+  expect(pkg).toMatchSnapshot();
+});
+
+test('fn() versus package.json with ava and pre-existing scripts', async () => {
+  const pkg = {
+    devDependencies: {
+      ava: '*',
+    },
+    scripts: {
+      test: 'true',
     },
   };
   require('update-json-file').__setPackage(pkg);

@@ -2,9 +2,32 @@
 
 exports[`fn() versus empty package.json 1`] = `
 Object {
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
   "scripts": Object {
-    "fmt": "npm run sort-package-json",
+    "fmt": "npm run sort-package-json && npm run prettier",
     "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
+    "sort-package-json": "npx -q sort-package-json",
+  },
+}
+`;
+
+exports[`fn() versus engines.node >= 8 1`] = `
+Object {
+  "engines": Object {
+    "node": ">=8",
+  },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "all",
+  },
+  "scripts": Object {
+    "fmt": "npm run sort-package-json && npm run prettier",
+    "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
   },
 }
@@ -16,11 +39,16 @@ Object {
     "ava": "*",
     "nyc": "*",
   },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
   "scripts": Object {
     "ava": "nyc ava",
-    "fmt": "npm run sort-package-json",
+    "fmt": "npm run sort-package-json && npm run prettier",
     "nyc": "nyc check-coverage",
     "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
   },
 }
@@ -31,10 +59,15 @@ Object {
   "devDependencies": Object {
     "ava": "*",
   },
+  "prettier": Object {
+    "singleQuote": true,
+    "trailingComma": "es5",
+  },
   "scripts": Object {
     "ava": "ava",
-    "fmt": "npm run sort-package-json",
+    "fmt": "npm run sort-package-json && npm run prettier",
     "pretest": "npm run fmt",
+    "prettier": "npx -q prettier --loglevel=warn --write \\"**/*.{css,js,json,jsx,md,less,scss,ts,tsx}\\"",
     "sort-package-json": "npx -q sort-package-json",
     "test": "true",
   },
