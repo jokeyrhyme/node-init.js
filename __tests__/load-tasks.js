@@ -94,7 +94,3 @@ test('npm-dev-deps.js after tasks that install devDeps', () => {
     'npm-dev-deps.js',
   );
 });
-
-test('flowtype.js after tasks that edit project code', () => {
-  assertTaskAfter(['pkg-main.js'], 'flowtype.js');
-});
