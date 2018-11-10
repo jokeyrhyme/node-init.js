@@ -2,15 +2,11 @@
 
 const { fetchVersions, supportedMajors } = require('../lib/nodejs-versions.js');
 
-test(
-  'fetchVersions()',
-  async () => {
-    const versions = await fetchVersions();
-    expect(Array.isArray(versions)).toBe(true);
-    expect(versions.length > 0).toBe(true);
-  },
-  20e3,
-);
+test('fetchVersions()', async () => {
+  const versions = await fetchVersions();
+  expect(Array.isArray(versions)).toBe(true);
+  expect(versions.length > 0).toBe(true);
+}, 20e3);
 
 const versions20161019 = [
   { version: 'v6.9.1' },
