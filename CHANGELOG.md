@@ -4,11 +4,13 @@
 
 ### Added
 
+- auto-raise oldest engines.npm when supported by engines.node
+
 - auto-run `npm run fmt` at the end of `node-init`
 
-### Changed
+- run `prettier` on HTML and Vue files
 
-- auto-raise oldest engines.npm when supported by engines.node
+### Changed
 
 - drop deprecated `sudo: false` from .travis.yml
 
