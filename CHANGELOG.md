@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## [3.4.0] = 2019-01-01
+
 ### Added
 
 - auto-raise oldest engines.npm when supported by engines.node
