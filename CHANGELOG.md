@@ -4,6 +4,8 @@
 
 ### Changed
 
+- auto-raise oldest engines.npm when supported by engines.node
+
 - drop deprecated `sudo: false` from .travis.yml
 
 - drop `nsp` for older engines.npm, end-of-life'd upstream

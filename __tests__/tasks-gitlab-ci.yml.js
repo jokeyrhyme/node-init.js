@@ -1,6 +1,8 @@
 /* @flow */
 'use strict';
 
+jest.unmock('execa');
+
 const {
   isNeeded,
   lib: { editConfig },
