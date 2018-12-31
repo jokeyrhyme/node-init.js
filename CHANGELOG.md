@@ -6,6 +6,8 @@
 
 - drop deprecated `sudo: false` from .travis.yml
 
+- drop `nsp` for older engines.npm, end-of-life'd upstream
+
 ## [3.3.0] - 2018-07-22
 
 ### Added
