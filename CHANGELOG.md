@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- auto-run `npm run fmt` at the end of `node-init`
+
 ### Changed
 
 - auto-raise oldest engines.npm when supported by engines.node
