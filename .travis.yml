@@ -9,7 +9,6 @@ addons:
     packages:
       - g++-4.8
 node_js:
-  - '8'
   - '10'
   - '11'
 install:
