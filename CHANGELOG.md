@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- drop deprecated `sudo: false` from .travis.yml
+
 ## [3.3.0] - 2018-07-22
 
 ### Added
