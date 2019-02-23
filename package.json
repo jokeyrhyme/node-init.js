@@ -13,14 +13,17 @@
   },
   "license": "BSD-2-Clause",
   "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
+  "files": [
+    "bin",
+    "dist",
+    "lib"
+  ],
   "main": "lib/index.js",
   "bin": {
-    "node-init": "bin/index.js"
-  },
-  "directories": {
-    "lib": "lib"
+    "node-init": "dist/bin/index.js"
   },
   "scripts": {
+    "build": "rm -rf dist && tsc --build tsconfig.json",
     "eslint": "eslint --cache --fix .",
     "flow": "flow check",
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint && npm run fmt:tslint",

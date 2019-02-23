@@ -2,10 +2,13 @@
   "compilerOptions": {
     "allowJs": true,
     "esModuleInterop": true,
-    "lib": ["ES2018"],
-    "module": "CommonJS",
+    "inlineSourceMap": true,
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "outDir": "dist",
     "resolveJsonModule": true,
-    "target": "ES2017"
+    "target": "es2018"
   },
-  "exclude": ["coverage", "flow-typed"]
+  "include": ["bin", "lib"],
+  "exclude": ["coverage", "dist", "flow-typed", "__tests__", "__mocks__"]
 }
