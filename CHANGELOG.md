@@ -2,11 +2,13 @@
 
 ## Unreleased
 
+## [3.5.0] - 2019-02-23
+
 ### Changed
 
 - experiment by porting some files to TypeScript
 
-## [3.4.0] = 2019-01-01
+## [3.4.0] - 2019-01-01
 
 ### Added
 
