@@ -1,1 +1,11 @@
-{}
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "lib": ["ES2018"],
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "target": "ES2017"
+  },
+  "exclude": ["coverage", "flow-typed"]
+}

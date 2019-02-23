@@ -1,3 +1,6 @@
 {
-  "extends": ["tslint:recommended", "./tslint-fmt.json"]
+  "extends": [
+    "@jokeyrhyme/typescript-config/tslint-recommended-no-style",
+    "./tslint-fmt.json"
+  ]
 }
