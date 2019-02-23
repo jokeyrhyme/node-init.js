@@ -23,7 +23,7 @@
     "node-init": "dist/bin/index.js"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc --build tsconfig.json",
+    "build": "rimraf ./dist && tsc --build tsconfig.json",
     "eslint": "eslint --cache --fix .",
     "flow": "flow check",
     "fmt": "npm run sort-package-json && npm run prettier && npm run fmt:eslint && npm run fmt:tslint",
@@ -35,7 +35,7 @@
     "prettier": "npx -q prettier --loglevel=warn --write \"**/*.{css,htm,html,js,json,jsx,md,less,scss,ts,tsx,vue}\"",
     "sort-package-json": "npx -q sort-package-json",
     "start": "ts-node ./bin/index.ts",
-    "pretest": "npm run fmt",
+    "pretest": "npm run fmt && npm run build",
     "test": "npm run jest && npm audit && npm run lint"
   },
   "prettier": {
@@ -78,7 +78,7 @@
     "p-memoize": "2.1.0",
     "package-engines-notifier": "1.1.0",
     "pify": "4.0.1",
-    "read-pkg-up": "4.0.0",
+    "read-pkg-up": "^4.0.0",
     "rimraf": "2.6.3",
     "semver": "^5.6.0",
     "through2": "3.0.0",
@@ -92,6 +92,7 @@
     "@jokeyrhyme/typescript-config": "^1.0.0",
     "@types/meow": "^5.0.0",
     "@types/node": "^11.9.4",
+    "@types/update-notifier": "^2.5.0",
     "eslint": "^5.14.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
