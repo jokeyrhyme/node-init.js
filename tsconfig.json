@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "target": "es2018"
+  },
+  "include": ["bin", "lib"],
+  "exclude": ["coverage", "dist", "flow-typed", "__tests__", "__mocks__"]
+}

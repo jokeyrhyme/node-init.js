@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-/* @flow */
-'use strict';
+/* eslint-disable node/shebang */
+/* tslint:disable no-console */
 
-const meow = require('meow');
-const { enginesNotify } = require('package-engines-notifier');
-const { updateNodejsNotifier } = require('update-nodejs-notifier');
-const updateNotifier = require('update-notifier');
+import meow from 'meow';
+import { enginesNotify } from 'package-engines-notifier';
+import { updateNodejsNotifier } from 'update-nodejs-notifier';
+import updateNotifier from 'update-notifier';
 
-const pkg = require('../package.json');
+import pkg from '../package.json';
 
 updateNotifier({ pkg }).notify();
 
@@ -32,7 +32,7 @@ Examples
     flags: {
       checkGitStatus: {
         default: true,
-        type:    'boolean',
+        type: 'boolean',
       },
       scope: {
         type: 'string',
@@ -41,11 +41,16 @@ Examples
   },
 );
 
-if (!enginesNotify({ pkg: pkg })) {
-  // no engine trouble, proceed :)
-  const { init } = require('../lib/index.js');
+(async () => {
+  if (!enginesNotify({ pkg })) {
+    // no engine trouble, proceed :)
+    const { init } = await import('../lib/index.js');
 
-  init(cli.input, cli.flags);
-} else {
+    init(cli.input, cli.flags);
+  } else {
+    process.exitCode = 1;
+  }
+})().catch(err => {
+  console.error(err);
   process.exitCode = 1;
-}
+});
