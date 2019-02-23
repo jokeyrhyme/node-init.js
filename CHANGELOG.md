@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## [3.5.1] - 2019-02-23
+
 ### Fixed
 
 - fix location of own package.json from within build output
