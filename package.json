@@ -62,7 +62,7 @@
     "execa": "1.0.0",
     "figures": "2.0.0",
     "graceful-fs": "^4.1.15",
-    "has-yarn": "1.0.0",
+    "has-yarn": "2.0.0",
     "idempotent-fs": "1.2.0",
     "js-yaml": "3.12.2",
     "latest-version": "^4.0.0",
