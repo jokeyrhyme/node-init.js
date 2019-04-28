@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- revert TypeScript experiment
+
 ## [3.5.1] - 2019-02-23
 
 ### Fixed

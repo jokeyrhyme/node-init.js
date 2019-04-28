@@ -1,12 +1,11 @@
 #!/usr/bin/env node
-/* eslint-disable node/shebang */
-/* tslint:disable no-console */
+/* eslint-disable no-console,node/shebang */
 
-import meow from 'meow';
-import { enginesNotify } from 'package-engines-notifier';
-import readPkgUp from 'read-pkg-up';
-import { updateNodejsNotifier } from 'update-nodejs-notifier';
-import updateNotifier from 'update-notifier';
+const meow = require('meow');
+const { enginesNotify } = require('package-engines-notifier');
+const readPkgUp = require('read-pkg-up');
+const { updateNodejsNotifier } = require('update-nodejs-notifier');
+const updateNotifier = require('update-notifier');
 
 (async () => {
   const { pkg } = await readPkgUp();
@@ -38,7 +37,7 @@ import updateNotifier from 'update-notifier';
       flags: {
         checkGitStatus: {
           default: true,
-          type: 'boolean',
+          type:    'boolean',
         },
         scope: {
           type: 'string',
@@ -49,7 +48,7 @@ import updateNotifier from 'update-notifier';
 
   if (!enginesNotify({ pkg })) {
     // no engine trouble, proceed :)
-    const { init } = await import('../lib/index.js');
+    const { init } = require('../lib/index.js');
 
     init(cli.input, cli.flags);
   } else {
