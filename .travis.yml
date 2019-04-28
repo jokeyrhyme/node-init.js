@@ -9,8 +9,7 @@ addons:
     packages:
       - g++-4.8
 node_js:
-  - '10'
-  - '11'
+  - '12'
 install:
   - npm install --global npm
   - npm install

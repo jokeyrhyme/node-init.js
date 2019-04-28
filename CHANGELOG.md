@@ -4,6 +4,8 @@
 
 ### Changed
 
+- require Node.js 12.x or newer
+
 - revert TypeScript experiment
 
 ## [3.5.1] - 2019-02-23

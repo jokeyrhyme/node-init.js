@@ -33,7 +33,7 @@ indent_style = tab
 
 # Go
 # https://golang.org/cmd/gofmt/
-[*.go]
+[{go.mod,*.go}]
 indent_style = tab
 
 # GraphQL
@@ -59,7 +59,7 @@ indent_style = space
 # JavaScript, JSON, JSX, JavaScript Modules, TypeScript
 # https://github.com/feross/standard
 # https://prettier.io
-[*.{js,json,jsx,mjs,ts,tsx}]
+[*.{cjs,js,json,jsx,mjs,ts,tsx}]
 indent_size = 2
 indent_style = space
 
