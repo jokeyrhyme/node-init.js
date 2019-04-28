@@ -8,6 +8,10 @@
 
 ## [3.5.1] - 2019-02-23
 
+### Changed
+
+- `rpm run fmt` runs `prettier` on .cjs files
+
 ### Fixed
 
 - fix location of own package.json from within build output
