@@ -4,15 +4,13 @@
 
 ### Changed
 
+- `npm run fmt` runs `prettier` on .cjs files
+
 - require Node.js 12.x or newer
 
 - revert TypeScript experiment
 
 ## [3.5.1] - 2019-02-23
-
-### Changed
-
-- `rpm run fmt` runs `prettier` on .cjs files
 
 ### Fixed
 
