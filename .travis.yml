@@ -9,12 +9,15 @@ addons:
     packages:
       - g++-4.8
 node_js:
-  - '10'
-  - '11'
+  - '12'
 install:
-  - npm install --global npm
   - npm install
 script:
   - npm test
-  - npm start -- --version
-  - node ./dist/bin/index.js --version
+  - ./bin/index.js --version
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.2
+    - os: windows
+    - os: linux

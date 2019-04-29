@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+### Changed
+
+- auto-set OS matrix for Travis CI from package.json:os
+
+- no longer configure AppVeyor and README badge
+
+- no longer update NPM in Travis CI builds
+
+- `npm run fmt` runs `prettier` on .cjs files
+
+- require Node.js 12.x or newer
+
+- revert TypeScript experiment
+
 ## [3.5.1] - 2019-02-23
 
 ### Fixed

@@ -1,4 +1,4 @@
-# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)](https://www.npmjs.com/package/@jokeyrhyme/node-init) [![AppVeyor Status](https://img.shields.io/appveyor/ci/jokeyrhyme/node-init-js/master.svg)](https://ci.appveyor.com/project/jokeyrhyme/node-init-js) [![Travis CI Status](https://travis-ci.org/jokeyrhyme/node-init.js.svg?branch=master)](https://travis-ci.org/jokeyrhyme/node-init.js)
+# jokeyrhyme / node-init [![npm](https://img.shields.io/npm/v/@jokeyrhyme/node-init.svg?maxAge=2592000)](https://www.npmjs.com/package/@jokeyrhyme/node-init) [![Travis CI Status](https://travis-ci.org/jokeyrhyme/node-init.js.svg?branch=master)](https://travis-ci.org/jokeyrhyme/node-init.js)
 
 impose my will upon a new or existing Node.js project
 
