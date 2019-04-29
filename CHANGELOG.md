@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## [4.0.0] - 2019-04-29
+
 ### Changed
 
 - auto-set OS matrix for Travis CI from package.json:os
