@@ -5,7 +5,7 @@ jest.unmock('execa');
 
 const {
   isNeeded,
-  lib: { pruneCache, pruneInstall, updateNpm },
+  lib: { pruneCache, pruneInstall, setOSMatrix, updateNpm },
 } = require('../lib/tasks/travis.yml.js');
 
 test('isNeeded()', async () => {
@@ -33,6 +33,36 @@ test('pruneInstall({ ... }, { hasYarn: true })', () => {
       install: ['npm install --global yarn'],
     },
     { hasYarn: true },
+  );
+  expect(results).toMatchSnapshot();
+});
+
+test('setOSMatrix({ ... }, {})', () => {
+  const results = setOSMatrix({ name: 'no-explicit-os' }, {});
+  expect(results).toMatchSnapshot();
+});
+test('setOSMatrix({ ... }, { os: ["freebsd"] })', () => {
+  const results = setOSMatrix({ name: 'freebsd' }, { os: ['freebsd'] });
+  expect(results).toMatchSnapshot();
+});
+test('setOSMatrix({ ... }, { os: ["freebsd", "!linux"] })', () => {
+  const results = setOSMatrix(
+    { name: 'strictly-freebsd' },
+    { os: ['freebsd', '!linux'] },
+  );
+  expect(results).toMatchSnapshot();
+});
+test('setOSMatrix({ ... }, { os: ["darwin", "win32"] })', () => {
+  const results = setOSMatrix(
+    { name: 'darwin-win32' },
+    { os: ['darwin', 'win32'] },
+  );
+  expect(results).toMatchSnapshot();
+});
+test('setOSMatrix({ ... }, { os: ["darwin", "win32", "!linux"] })', () => {
+  const results = setOSMatrix(
+    { name: 'strictly-darwin-win32' },
+    { os: ['darwin', 'win32', '!linux'] },
   );
   expect(results).toMatchSnapshot();
 });

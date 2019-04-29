@@ -12,6 +12,61 @@ Object {
 }
 `;
 
+exports[`setOSMatrix({ ... }, { os: ["darwin", "win32", "!linux"] }) 1`] = `
+Object {
+  "matrix": Object {
+    "include": Array [
+      Object {
+        "os": "osx",
+        "osx_image": "xcode10.2",
+      },
+      Object {
+        "os": "windows",
+      },
+    ],
+  },
+  "name": "strictly-darwin-win32",
+}
+`;
+
+exports[`setOSMatrix({ ... }, { os: ["darwin", "win32"] }) 1`] = `
+Object {
+  "matrix": Object {
+    "include": Array [
+      Object {
+        "os": "osx",
+        "osx_image": "xcode10.2",
+      },
+      Object {
+        "os": "windows",
+      },
+      Object {
+        "os": "linux",
+      },
+    ],
+  },
+  "name": "darwin-win32",
+}
+`;
+
+exports[`setOSMatrix({ ... }, { os: ["freebsd", "!linux"] }) 1`] = `
+Object {
+  "name": "strictly-freebsd",
+}
+`;
+
+exports[`setOSMatrix({ ... }, { os: ["freebsd"] }) 1`] = `
+Object {
+  "name": "freebsd",
+}
+`;
+
+exports[`setOSMatrix({ ... }, {}) 1`] = `
+Object {
+  "name": "no-explicit-os",
+}
+`;
+
 exports[`updateNpm({}, { hasYarn: false }) 1`] = `
 Object {
   "install": Array [

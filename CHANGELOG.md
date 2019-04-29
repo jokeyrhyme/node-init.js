@@ -4,6 +4,8 @@
 
 ### Changed
 
+- auto-set OS matrix for Travis CI from package.json:os
+
 - `npm run fmt` runs `prettier` on .cjs files
 
 - require Node.js 12.x or newer
