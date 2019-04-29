@@ -101,6 +101,11 @@
     "node": ">=12",
     "npm": ">=6"
   },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
   "publishConfig": {
     "access": "public"
   }

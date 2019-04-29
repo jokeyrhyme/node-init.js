@@ -16,3 +16,9 @@ install:
 script:
   - npm test
   - ./bin/index.js --version
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.2
+    - os: windows
+    - os: linux
