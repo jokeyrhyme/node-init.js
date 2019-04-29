@@ -8,6 +8,8 @@
 
 - no longer configure AppVeyor and README badge
 
+- no longer update NPM in Travis CI builds
+
 - `npm run fmt` runs `prettier` on .cjs files
 
 - require Node.js 12.x or newer
