@@ -77,7 +77,7 @@
     "pify": "4.0.1",
     "read-pkg-up": "^5.0.0",
     "rimraf": "2.6.3",
-    "semver": "^6.0.0",
+    "semver": "6.2.0",
     "through2": "3.0.1",
     "update-json-file": "^1.1.1",
     "update-nodejs-notifier": "1.1.1",
