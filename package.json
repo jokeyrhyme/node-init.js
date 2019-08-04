@@ -58,7 +58,7 @@
     "detect-flowtype": "2.0.0",
     "execa": "1.0.0",
     "figures": "3.0.0",
-    "graceful-fs": "^4.1.15",
+    "graceful-fs": "4.2.0",
     "has-yarn": "2.1.0",
     "idempotent-fs": "1.2.0",
     "js-yaml": "3.13.1",
