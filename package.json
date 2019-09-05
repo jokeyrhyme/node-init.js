@@ -94,7 +94,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^9.0.0",
     "eslint-plugin-promise": "^4.0.0",
-    "flow-bin": "^0.102.0",
+    "flow-bin": "^0.107.0",
     "jest": "^24.1.0"
   },
   "engines": {
