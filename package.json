@@ -54,7 +54,7 @@
     }
   },
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "detect-flowtype": "2.0.0",
     "execa": "2.0.0",
     "figures": "3.0.0",
