@@ -90,7 +90,7 @@
     "@types/meow": "^5.0.0",
     "@types/node": "^12.0.0",
     "@types/update-notifier": "^2.5.0",
-    "eslint": "^5.14.1",
+    "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^9.0.0",
     "eslint-plugin-promise": "^4.0.0",
