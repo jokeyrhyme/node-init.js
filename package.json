@@ -70,7 +70,7 @@
     "lodash.union": "^4.5.0",
     "lodash.without": "^4.3.0",
     "log-update": "3.2.0",
-    "meow": "^5.0.0",
+    "meow": "^6.1.0",
     "node-fetch": "^2.3.0",
     "p-memoize": "3.1.0",
     "package-engines-notifier": "1.1.0",
