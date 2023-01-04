@@ -95,7 +95,7 @@
     "eslint-plugin-node": "^9.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "flow-bin": "^0.102.0",
-    "jest": "^24.1.0"
+    "jest": "^29.3.1"
   },
   "engines": {
     "node": ">=12",
