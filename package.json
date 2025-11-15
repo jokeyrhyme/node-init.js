@@ -61,7 +61,7 @@
     "graceful-fs": "^4.1.15",
     "has-yarn": "2.1.0",
     "idempotent-fs": "1.2.0",
-    "js-yaml": "3.13.1",
+    "js-yaml": "4.1.1",
     "latest-version": "^7.0.0",
     "load-json-file": "6.1.0",
     "locate-path": "^5.0.0",
